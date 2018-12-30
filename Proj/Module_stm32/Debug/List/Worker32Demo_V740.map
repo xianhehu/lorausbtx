@@ -1,0 +1,960 @@
+###############################################################################
+#
+# IAR ELF Linker V7.80.4.12462/W32 for ARM                28/Mar/2017  17:12:18
+# Copyright 2007-2017 IAR Systems AB.
+#
+#    Output file  =  
+#        C:\Users\solar\Desktop\项目代码\Worker32\Proj\Module_stm32\Debug\Exe\Worker32Demo_V740.out
+#    Map file     =  
+#        C:\Users\solar\Desktop\项目代码\Worker32\Proj\Module_stm32\Debug\List\Worker32Demo_V740.map
+#    Command line =  
+#        C:\Users\solar\Desktop\项目代码\Worker32\Proj\Module_stm32\Debug\Obj\aes.o
+#        C:\Users\solar\Desktop\项目代码\Worker32\Proj\Module_stm32\Debug\Obj\at.o
+#        C:\Users\solar\Desktop\项目代码\Worker32\Proj\Module_stm32\Debug\Obj\Drv_IOCtl.o
+#        C:\Users\solar\Desktop\项目代码\Worker32\Proj\Module_stm32\Debug\Obj\Drv_power.o
+#        C:\Users\solar\Desktop\项目代码\Worker32\Proj\Module_stm32\Debug\Obj\Drv_rtc.o
+#        C:\Users\solar\Desktop\项目代码\Worker32\Proj\Module_stm32\Debug\Obj\Drv_Spi.o
+#        C:\Users\solar\Desktop\项目代码\Worker32\Proj\Module_stm32\Debug\Obj\Drv_sx127x.o
+#        C:\Users\solar\Desktop\项目代码\Worker32\Proj\Module_stm32\Debug\Obj\Drv_SX127x_IOCTL.o
+#        C:\Users\solar\Desktop\项目代码\Worker32\Proj\Module_stm32\Debug\Obj\Drv_Usart.o
+#        C:\Users\solar\Desktop\项目代码\Worker32\Proj\Module_stm32\Debug\Obj\Drv_wtd.o
+#        C:\Users\solar\Desktop\项目代码\Worker32\Proj\Module_stm32\Debug\Obj\gps.o
+#        C:\Users\solar\Desktop\项目代码\Worker32\Proj\Module_stm32\Debug\Obj\lmic.o
+#        C:\Users\solar\Desktop\项目代码\Worker32\Proj\Module_stm32\Debug\Obj\lmic_task.o
+#        C:\Users\solar\Desktop\项目代码\Worker32\Proj\Module_stm32\Debug\Obj\lmicapi.o
+#        C:\Users\solar\Desktop\项目代码\Worker32\Proj\Module_stm32\Debug\Obj\lmiclowlevelapi.o
+#        C:\Users\solar\Desktop\项目代码\Worker32\Proj\Module_stm32\Debug\Obj\lmicradio.o
+#        C:\Users\solar\Desktop\项目代码\Worker32\Proj\Module_stm32\Debug\Obj\Main.o
+#        C:\Users\solar\Desktop\项目代码\Worker32\Proj\Module_stm32\Debug\Obj\osal.o
+#        C:\Users\solar\Desktop\项目代码\Worker32\Proj\Module_stm32\Debug\Obj\oslmic.o
+#        C:\Users\solar\Desktop\项目代码\Worker32\Proj\Module_stm32\Debug\Obj\radiocheck_task.o
+#        C:\Users\solar\Desktop\项目代码\Worker32\Proj\Module_stm32\Debug\Obj\startup_stm32f030.o
+#        C:\Users\solar\Desktop\项目代码\Worker32\Proj\Module_stm32\Debug\Obj\stm32f0xx_exti.o
+#        C:\Users\solar\Desktop\项目代码\Worker32\Proj\Module_stm32\Debug\Obj\stm32f0xx_flash.o
+#        C:\Users\solar\Desktop\项目代码\Worker32\Proj\Module_stm32\Debug\Obj\stm32f0xx_gpio.o
+#        C:\Users\solar\Desktop\项目代码\Worker32\Proj\Module_stm32\Debug\Obj\stm32f0xx_it.o
+#        C:\Users\solar\Desktop\项目代码\Worker32\Proj\Module_stm32\Debug\Obj\stm32f0xx_misc.o
+#        C:\Users\solar\Desktop\项目代码\Worker32\Proj\Module_stm32\Debug\Obj\stm32f0xx_pwr.o
+#        C:\Users\solar\Desktop\项目代码\Worker32\Proj\Module_stm32\Debug\Obj\stm32f0xx_rcc.o
+#        C:\Users\solar\Desktop\项目代码\Worker32\Proj\Module_stm32\Debug\Obj\stm32f0xx_rtc.o
+#        C:\Users\solar\Desktop\项目代码\Worker32\Proj\Module_stm32\Debug\Obj\stm32f0xx_spi.o
+#        C:\Users\solar\Desktop\项目代码\Worker32\Proj\Module_stm32\Debug\Obj\stm32f0xx_syscfg.o
+#        C:\Users\solar\Desktop\项目代码\Worker32\Proj\Module_stm32\Debug\Obj\stm32f0xx_usart.o
+#        C:\Users\solar\Desktop\项目代码\Worker32\Proj\Module_stm32\Debug\Obj\stm32f0xx_wwdg.o
+#        C:\Users\solar\Desktop\项目代码\Worker32\Proj\Module_stm32\Debug\Obj\system_stm32f0xx.o
+#        C:\Users\solar\Desktop\项目代码\Worker32\Proj\Module_stm32\Debug\Obj\uart_task.o
+#        C:\Users\solar\Desktop\项目代码\Worker32\Proj\Module_stm32\Debug\Obj\wtd_task.o
+#        -o
+#        C:\Users\solar\Desktop\项目代码\Worker32\Proj\Module_stm32\Debug\Exe\Worker32Demo_V740.out
+#        --map
+#        C:\Users\solar\Desktop\项目代码\Worker32\Proj\Module_stm32\Debug\List\Worker32Demo_V740.map
+#        --config
+#        C:\Users\solar\Desktop\项目代码\Worker32\Proj\Module_stm32\Proj_stm32f030x8.icf
+#        --semihosting --entry __iar_program_start --vfe
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__SystemLibrary = DLib
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A0":  place at 0x08000000 { ro section .intvec };
+"P1":  place in [from 0x08000000 to 0x0800fbff] { ro };
+"P2":  place in [from 0x20000000 to 0x20001fff] { rw, block CSTACK, block HEAP };
+initialize by copy { rw };
+
+  Section            Kind        Address    Size  Object
+  -------            ----        -------    ----  ------
+"A0":                                       0xb4
+  .intvec            ro code  0x08000000    0xb4  startup_stm32f030.o [1]
+                            - 0x080000b4    0xb4
+
+"P1":                                     0xb49d
+  .text              ro code  0x080000b4  0x2298  lmic.o [1]
+  .text              ro code  0x0800234c    0x54  ABImemset.o [5]
+  .text              ro code  0x080023a0    0x5c  ABImemcpy.o [5]
+  .text              ro code  0x080023fc   0x8d0  aes.o [1]
+  .text              ro code  0x08002ccc   0x4ec  oslmic.o [1]
+  .text              ro code  0x080031b8    0xe0  I32DivModFast.o [5]
+  .text              ro code  0x08003298    0x32  I64Mul.o [5]
+  .text              ro code  0x080032ca    0xa8  I64DivMod.o [5]
+  .text              ro code  0x08003372     0x2  startup_stm32f030.o [1]
+  .text              ro code  0x08003374   0x354  lmicradio.o [1]
+  .text              ro code  0x080036c8   0x20c  lmicapi.o [1]
+  .text              ro code  0x080038d4   0x22c  lmiclowlevelapi.o [1]
+  .text              ro code  0x08003b00   0x1d4  osal.o [1]
+  .text              ro code  0x08003cd4     0x2  IntDivZer.o [5]
+  .text              ro code  0x08003cd6     0x2  startup_stm32f030.o [1]
+  .text              ro code  0x08003cd8     0x2  I64DivZer.o [5]
+  .text              ro code  0x08003cda     0x2  startup_stm32f030.o [1]
+  .text              ro code  0x08003cdc   0x13a  stm32f0xx_flash.o [1]
+  .text              ro code  0x08003e16     0x2  startup_stm32f030.o [1]
+  .text              ro code  0x08003e18    0xcc  lmic_task.o [1]
+  .text              ro code  0x08003ee4   0x2a8  Drv_SX127x_IOCTL.o [1]
+  .text              ro code  0x0800418c  0x1f40  Drv_sx127x.o [1]
+  .text              ro code  0x080060cc   0x4f0  stm32f0xx_rcc.o [1]
+  .text              ro code  0x080065bc    0x54  stm32f0xx_pwr.o [1]
+  .text              ro code  0x08006610   0x106  stm32f0xx_gpio.o [1]
+  .text              ro code  0x08006716     0x2  startup_stm32f030.o [1]
+  .text              ro code  0x08006718    0x58  stm32f0xx_syscfg.o [1]
+  .text              ro code  0x08006770    0xa0  stm32f0xx_exti.o [1]
+  .text              ro code  0x08006810    0x74  stm32f0xx_misc.o [1]
+  .text              ro code  0x08006884   0x138  Drv_Spi.o [1]
+  .text              ro code  0x080069bc    0x34  I32ToDbl.o [4]
+  .text              ro code  0x080069f0    0xc2  DblDiv.o [4]
+  .text              ro code  0x08006ab2     0x2  startup_stm32f030.o [1]
+  .text              ro code  0x08006ab4    0x52  DblToI32.o [4]
+  .text              ro code  0x08006b06   0x1b4  DblAddSub.o [4]
+  .text              ro code  0x08006cba   0x184  DblMul.o [4]
+  .text              ro code  0x08006e3e     0x2  startup_stm32f030.o [1]
+  .text              ro code  0x08006e40    0xb2  stm32f0xx_spi.o [1]
+  .text              ro code  0x08006ef2     0x2  startup_stm32f030.o [1]
+  .text              ro code  0x08006ef4   0xeb6  xprintffull_nomb.o [3]
+  .text              ro code  0x08007daa    0x14  strchr.o [5]
+  .text              ro code  0x08007dbe    0x10  strlen.o [5]
+  .text              ro code  0x08007dce    0x18  memchr.o [5]
+  .text              ro code  0x08007de6    0x32  DblCmpLe.o [4]
+  .text              ro code  0x08007e18    0x32  DblCmpGe.o [4]
+  .text              ro code  0x08007e4a     0x2  startup_stm32f030.o [1]
+  .text              ro code  0x08007e4c    0x80  xdscale.o [4]
+  .text              ro code  0x08007ecc    0x20  div.o [3]
+  .text              ro code  0x08007eec   0xe70  at.o [1]
+  .text              ro code  0x08008d5c   0x31c  Drv_Usart.o [1]
+  .text              ro code  0x08009078    0x48  snprintf.o [3]
+  .text              ro code  0x080090c0   0x1f8  Drv_rtc.o [1]
+  .text              ro code  0x080092b8    0x2c  strncmp.o [3]
+  .text              ro code  0x080092e4   0x14c  stm32f0xx_usart.o [1]
+  .text              ro code  0x08009430   0x472  stm32f0xx_rtc.o [1]
+  .text              ro code  0x080098a2     0x2  startup_stm32f030.o [1]
+  .rodata            const    0x080098a4   0x400  aes.o [1]
+  .rodata            const    0x08009ca4   0x400  aes.o [1]
+  .rodata            const    0x0800a0a4   0x400  aes.o [1]
+  .rodata            const    0x0800a4a4   0x400  aes.o [1]
+  .text              ro code  0x0800a8a4   0x180  Main.o [1]
+  .text              ro code  0x0800aa24    0x78  Drv_IOCtl.o [1]
+  .text              ro code  0x0800aa9c    0x68  radiocheck_task.o [1]
+  .text              ro code  0x0800ab04    0x84  uart_task.o [1]
+  .text              ro code  0x0800ab88   0x168  system_stm32f0xx.o [1]
+  .rodata            const    0x0800acf0   0x100  aes.o [1]
+  .rodata            const    0x0800adf0    0xa8  Drv_sx127x.o [1]
+  .rodata            const    0x0800ae98    0x70  at.o [1]
+  Initializer bytes  const    0x0800af08    0x60  <for P2-1>
+  .text              ro code  0x0800af68     0x2  startup_stm32f030.o [1]
+  .text              ro code  0x0800af6c    0x52  stm32f0xx_it.o [1]
+  .text              ro code  0x0800afbe     0x2  startup_stm32f030.o [1]
+  .rodata            const    0x0800afc0    0x50  Drv_sx127x.o [1]
+  .rodata            const    0x0800b010    0x50  Drv_sx127x.o [1]
+  .text              ro code  0x0800b060    0x3c  startup_stm32f030.o [1]
+  .text              ro code  0x0800b09c    0x3c  zero_init3.o [5]
+  .rodata            const    0x0800b0d8    0x38  at.o [1]
+  .rodata            const    0x0800b110    0x38  Drv_sx127x.o [1]
+  .rodata            const    0x0800b148    0x38  Drv_sx127x.o [1]
+  .rodata            const    0x0800b180    0x34  Drv_sx127x.o [1]
+  .text              ro code  0x0800b1b4    0x30  copy_init3.o [5]
+  .rodata            const    0x0800b1e4    0x28  aes.o [1]
+  .rodata            const    0x0800b20c    0x28  lmicradio.o [1]
+  .text              ro code  0x0800b234    0x28  data_init.o [5]
+  .iar.init_table    const    0x0800b25c    0x24  - Linker created -
+  .rodata            const    0x0800b280    0x20  lmic.o [1]
+  .text              ro code  0x0800b2a0    0x1c  xsnprout.o [3]
+  .text              ro code  0x0800b2bc    0x1a  cmain.o [5]
+  .text              ro code  0x0800b2d6     0x4  low_level_init.o [3]
+  .text              ro code  0x0800b2da     0x8  exit.o [3]
+  .text              ro code  0x0800b2e2     0x2  startup_stm32f030.o [1]
+  .text              ro code  0x0800b2e4     0xa  cexit.o [5]
+  .text              ro code  0x0800b2ee     0x2  startup_stm32f030.o [1]
+  .text              ro code  0x0800b2f0    0x14  exit.o [6]
+  .rodata            const    0x0800b308    0x18  Drv_sx127x.o [1]
+  .rodata            const    0x0800b320    0x18  Drv_SX127x_IOCTL.o [1]
+  .rodata            const    0x0800b338    0x18  lmic.o [1]
+  .rodata            const    0x0800b350    0x18  xprintffull_nomb.o [3]
+  .rodata            const    0x0800b368    0x10  lmic.o [1]
+  .rodata            const    0x0800b378    0x10  lmicradio.o [1]
+  .rodata            const    0x0800b388     0xc  at.o [1]
+  .rodata            const    0x0800b394     0xc  at.o [1]
+  .rodata            const    0x0800b3a0     0xc  at.o [1]
+  .rodata            const    0x0800b3ac     0xc  at.o [1]
+  .rodata            const    0x0800b3b8     0xc  at.o [1]
+  .rodata            const    0x0800b3c4     0xc  at.o [1]
+  .rodata            const    0x0800b3d0     0xc  at.o [1]
+  .rodata            const    0x0800b3dc     0xc  at.o [1]
+  .rodata            const    0x0800b3e8     0xc  at.o [1]
+  .rodata            const    0x0800b3f4     0xc  at.o [1]
+  .rodata            const    0x0800b400     0xc  at.o [1]
+  .rodata            const    0x0800b40c     0xc  at.o [1]
+  .rodata            const    0x0800b418     0xc  at.o [1]
+  .rodata            const    0x0800b424     0xc  at.o [1]
+  .rodata            const    0x0800b430     0xc  at.o [1]
+  .rodata            const    0x0800b43c     0xc  Drv_IOCtl.o [1]
+  .rodata            const    0x0800b448     0xc  Drv_SX127x_IOCTL.o [1]
+  .rodata            const    0x0800b454     0xc  lmic.o [1]
+  .rodata            const    0x0800b460     0xc  lmic.o [1]
+  .text              ro code  0x0800b46c     0xc  cstartup_M.o [5]
+  .rodata            const    0x0800b478     0x8  at.o [1]
+  .rodata            const    0x0800b480     0x8  at.o [1]
+  .rodata            const    0x0800b488     0x8  at.o [1]
+  .rodata            const    0x0800b490     0x8  at.o [1]
+  .rodata            const    0x0800b498     0x8  at.o [1]
+  .rodata            const    0x0800b4a0     0x8  at.o [1]
+  .rodata            const    0x0800b4a8     0x8  at.o [1]
+  .rodata            const    0x0800b4b0     0x8  at.o [1]
+  .rodata            const    0x0800b4b8     0x8  at.o [1]
+  .rodata            const    0x0800b4c0     0x8  at.o [1]
+  .rodata            const    0x0800b4c8     0x8  at.o [1]
+  .rodata            const    0x0800b4d0     0x8  at.o [1]
+  .rodata            const    0x0800b4d8     0x8  at.o [1]
+  .rodata            const    0x0800b4e0     0x8  at.o [1]
+  .rodata            const    0x0800b4e8     0x8  at.o [1]
+  .rodata            const    0x0800b4f0     0x8  at.o [1]
+  .rodata            const    0x0800b4f8     0x8  at.o [1]
+  .rodata            const    0x0800b500     0x8  at.o [1]
+  .rodata            const    0x0800b508     0x8  at.o [1]
+  .rodata            const    0x0800b510     0x8  at.o [1]
+  .rodata            const    0x0800b518     0x8  at.o [1]
+  .rodata            const    0x0800b520     0x8  Drv_IOCtl.o [1]
+  .rodata            const    0x0800b528     0x8  Drv_SX127x_IOCTL.o [1]
+  .rodata            const    0x0800b530     0x8  Drv_SX127x_IOCTL.o [1]
+  .rodata            const    0x0800b538     0x8  Drv_SX127x_IOCTL.o [1]
+  .rodata            const    0x0800b540     0x4  at.o [1]
+  .rodata            const    0x0800b544     0x4  Drv_IOCtl.o [1]
+  .rodata            const    0x0800b548     0x4  Drv_IOCtl.o [1]
+  .text              ro code  0x0800b54c     0x2  startup_stm32f030.o [1]
+  .text              ro code  0x0800b54e     0x2  startup_stm32f030.o [1]
+  .rodata            const    0x0800b550     0x1  Drv_SX127x_IOCTL.o [1]
+  .rodata            const    0x0800b551     0x0  zero_init3.o [5]
+  .rodata            const    0x0800b551     0x0  copy_init3.o [5]
+                            - 0x0800b551  0xb49d
+
+"P2", part 1 of 3:                          0x60
+  P2-1                        0x20000000    0x5e  <Init block>
+    .data            inited   0x20000000     0xc  Drv_IOCtl.o [1]
+    .data            inited   0x2000000c    0x18  Drv_SX127x_IOCTL.o [1]
+    .data            inited   0x20000024     0x4  Drv_Usart.o [1]
+    .data            inited   0x20000028     0x8  oslmic.o [1]
+    .data            inited   0x20000030     0x8  oslmic.o [1]
+    .data            inited   0x20000038    0x10  oslmic.o [1]
+    .data            inited   0x20000048    0x10  stm32f0xx_rcc.o [1]
+    .data            inited   0x20000058     0x4  system_stm32f0xx.o [1]
+    .data            inited   0x2000005c     0x1  lmic_task.o [1]
+    .data            inited   0x2000005d     0x1  radiocheck_task.o [1]
+                            - 0x2000005e    0x5e
+
+"P2", part 2 of 3:                         0x800
+  CSTACK                      0x20000060   0x800  <Block>
+    CSTACK           uninit   0x20000060   0x800  <Block tail>
+                            - 0x20000860   0x800
+
+"P2", part 3 of 3:                         0x688
+  .bss               zero     0x20000860   0x158  lmic.o [1]
+  .bss               zero     0x200009b8   0x100  Main.o [1]
+  .bss               zero     0x20000ab8    0xc8  oslmic.o [1]
+  .bss               zero     0x20000b80    0xc8  uart_task.o [1]
+  .bss               zero     0x20000c48    0xb0  aes.o [1]
+  .bss               zero     0x20000cf8    0x94  lmicapi.o [1]
+  .bss               zero     0x20000d8c    0x30  Drv_sx127x.o [1]
+  .bss               zero     0x20000dbc    0x28  osal.o [1]
+  .bss               zero     0x20000de4    0x28  osal.o [1]
+  .bss               zero     0x20000e0c    0x14  at.o [1]
+  .bss               zero     0x20000e20    0x14  lmicradio.o [1]
+  .bss               zero     0x20000e34    0x10  aes.o [1]
+  .bss               zero     0x20000e44    0x10  Drv_Usart.o [1]
+  .bss               zero     0x20000e54    0x10  lmiclowlevelapi.o [1]
+  .bss               zero     0x20000e64    0x10  lmicradio.o [1]
+  .bss               zero     0x20000e74     0xc  Drv_rtc.o [1]
+  .bss               zero     0x20000e80     0xc  lmic_task.o [1]
+  .bss               zero     0x20000e8c     0xc  oslmic.o [1]
+  .bss               zero     0x20000e98     0xc  radiocheck_task.o [1]
+  .bss               zero     0x20000ea4     0xc  uart_task.o [1]
+  .bss               zero     0x20000eb0     0x8  Drv_SX127x_IOCTL.o [1]
+  .bss               zero     0x20000eb8     0x8  oslmic.o [1]
+  .bss               zero     0x20000ec0     0x4  at.o [1]
+  .bss               zero     0x20000ec4     0x4  Drv_IOCtl.o [1]
+  .bss               zero     0x20000ec8     0x4  Drv_SX127x_IOCTL.o [1]
+  .bss               zero     0x20000ecc     0x4  osal.o [1]
+  .bss               zero     0x20000ed0     0x4  osal.o [1]
+  .bss               zero     0x20000ed4     0x4  uart_task.o [1]
+  .bss               zero     0x20000ed8     0x1  Drv_rtc.o [1]
+  .bss               zero     0x20000ed9     0x1  lmic_task.o [1]
+  .bss               zero     0x20000eda     0x1  lmic_task.o [1]
+  .bss               zero     0x20000edb     0x1  lmic_task.o [1]
+  .bss               zero     0x20000edc     0x1  lmicradio.o [1]
+  .bss               zero     0x20000edd     0x1  lmicradio.o [1]
+  .bss               zero     0x20000ede     0x1  osal.o [1]
+  .bss               zero     0x20000edf     0x1  osal.o [1]
+  .bss               zero     0x20000ee0     0x1  oslmic.o [1]
+  .bss               zero     0x20000ee1     0x1  oslmic.o [1]
+  .bss               zero     0x20000ee2     0x1  oslmic.o [1]
+  .bss               zero     0x20000ee3     0x1  oslmic.o [1]
+  .bss               zero     0x20000ee4     0x1  uart_task.o [1]
+                            - 0x20000ee5   0x685
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address     Size
+          -------     ----
+Zero (__iar_zero_init3)
+    1 destination range, total size 0x685:
+          0x20000860  0x685
+
+Copy (__iar_copy_init3)
+    1 source range, total size 0x60 (102% of destination):
+          0x0800af08   0x60
+    1 destination range, total size 0x5e:
+          0x20000000   0x5e
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module               ro code  ro data  rw data
+    ------               -------  -------  -------
+C:\Users\solar\Desktop\项目代码\Worker32\Proj\Module_stm32\Debug\Obj: [1]
+    Drv_IOCtl.o              120       40       16
+    Drv_SX127x_IOCTL.o       680       85       36
+    Drv_Spi.o                312
+    Drv_Usart.o              796        4       20
+    Drv_rtc.o                504                13
+    Drv_sx127x.o           8 000      516       48
+    Main.o                   384               256
+    aes.o                  2 256    4 392      192
+    at.o                   3 696      520       24
+    lmic.o                 8 856       96      344
+    lmic_task.o              204        1       16
+    lmicapi.o                524               148
+    lmiclowlevelapi.o        556                16
+    lmicradio.o              852       56       38
+    osal.o                   468                90
+    oslmic.o               1 260       32      256
+    radiocheck_task.o        104        1       13
+    startup_stm32f030.o      272
+    stm32f0xx_exti.o         160
+    stm32f0xx_flash.o        314
+    stm32f0xx_gpio.o         262
+    stm32f0xx_it.o            82
+    stm32f0xx_misc.o         116
+    stm32f0xx_pwr.o           84
+    stm32f0xx_rcc.o        1 264       16       16
+    stm32f0xx_rtc.o        1 138
+    stm32f0xx_spi.o          178
+    stm32f0xx_syscfg.o        88
+    stm32f0xx_usart.o        332
+    system_stm32f0xx.o       360        4        4
+    uart_task.o              132               217
+    ----------------------------------------------
+    Total:                34 354    5 763    1 763
+
+command line: [2]
+    ----------------------------------------------
+    Total:
+
+dl6M_tln.a: [3]
+    div.o                     32
+    exit.o                     8
+    low_level_init.o           4
+    snprintf.o                72
+    strncmp.o                 44
+    xprintffull_nomb.o     3 766       24
+    xsnprout.o                28
+    ----------------------------------------------
+    Total:                 3 954       24
+
+m6M_tl.a: [4]
+    DblAddSub.o              436
+    DblCmpGe.o                50
+    DblCmpLe.o                50
+    DblDiv.o                 194
+    DblMul.o                 388
+    DblToI32.o                82
+    I32ToDbl.o                52
+    xdscale.o                128
+    ----------------------------------------------
+    Total:                 1 380
+
+rt6M_tl.a: [5]
+    ABImemcpy.o               92
+    ABImemset.o               84
+    I32DivModFast.o          224
+    I64DivMod.o              168
+    I64DivZer.o                2
+    I64Mul.o                  50
+    IntDivZer.o                2
+    cexit.o                   10
+    cmain.o                   26
+    copy_init3.o              48
+    cstartup_M.o              12
+    data_init.o               40
+    memchr.o                  24
+    strchr.o                  20
+    strlen.o                  16
+    zero_init3.o              60
+    ----------------------------------------------
+    Total:                   878
+
+shb_l.a: [6]
+    exit.o                    20
+    ----------------------------------------------
+    Total:                    20
+
+    Gaps                       2        4
+    Linker created                     38    2 048
+--------------------------------------------------
+    Grand Total:          40 588    5 829    3 811
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                      Address   Size  Type      Object
+-----                      -------   ----  ----      ------
+.iar.init_table$$Base   0x0800b25c          --   Gb  - Linker created -
+.iar.init_table$$Limit  0x0800b280          --   Gb  - Linker created -
+?main                   0x0800b2bd         Code  Gb  cmain.o [5]
+AESAUX                  0x20000e34   0x10  Data  Gb  aes.o [1]
+AESKEY                  0x20000c48   0xb0  Data  Gb  aes.o [1]
+AES_E1                  0x080098a4  0x400  Data  Lc  aes.o [1]
+AES_E2                  0x08009ca4  0x400  Data  Lc  aes.o [1]
+AES_E3                  0x0800a0a4  0x400  Data  Lc  aes.o [1]
+AES_E4                  0x0800a4a4  0x400  Data  Lc  aes.o [1]
+AES_RCON                0x0800b1e4   0x28  Data  Lc  aes.o [1]
+AES_S                   0x0800acf0  0x100  Data  Lc  aes.o [1]
+APBAHBPrescTable        0x20000048   0x10  Data  Lc  stm32f0xx_rcc.o [1]
+APPEUI                  0x20000028    0x8  Data  Lc  oslmic.o [1]
+ATZ_Handle              0x08007f99    0xa  Code  Lc  at.o [1]
+AT_AppEuiQHandle        0x0800844d   0x52  Code  Lc  at.o [1]
+AT_AppEuiSHandle        0x08008405   0x42  Code  Lc  at.o [1]
+AT_AppKeyQHandle        0x080083b3   0x52  Code  Lc  at.o [1]
+AT_AppKeySHandle        0x08008371   0x42  Code  Lc  at.o [1]
+AT_BandSHandle          0x0800849f   0x44  Code  Lc  at.o [1]
+AT_BaseFreqHandle       0x0800812d   0x8e  Code  Lc  at.o [1]
+AT_CmdsDecode           0x08008bcd  0x15c  Code  Gb  at.o [1]
+AT_CommTestHandle       0x08008805  0x17c  Code  Lc  at.o [1]
+AT_ElpHandle            0x08008615   0x98  Code  Lc  at.o [1]
+AT_IOHandle             0x080086b5  0x138  Code  Lc  at.o [1]
+AT_IdQHandle            0x08007fa3   0x76  Code  Lc  at.o [1]
+AT_IdSHandle            0x08008019   0x62  Code  Lc  at.o [1]
+AT_NetHandle            0x080081bb   0x5c  Code  Lc  at.o [1]
+AT_NsHandle             0x0800807b   0x26  Code  Lc  at.o [1]
+AT_ParamLenGet          0x08008b8d   0x26  Code  Lc  at.o [1]
+AT_PrintAck             0x08007eed   0x18  Code  Gb  at.o [1]
+AT_Rx2ParamQHandle      0x080085a5   0x66  Code  Lc  at.o [1]
+AT_Rx2ParamSHandle      0x0800852f   0x68  Code  Lc  at.o [1]
+AT_RxHandle             0x080080a1   0x8c  Code  Lc  at.o [1]
+AT_RxTestHandle         0x080089f9  0x190  Code  Lc  at.o [1]
+AT_SfSHandle            0x080084e9   0x46  Code  Lc  at.o [1]
+AT_TsHandle             0x0800831d   0x4c  Code  Lc  at.o [1]
+AT_TxHandle             0x08008229   0xec  Code  Lc  at.o [1]
+AT_TxTestHandle         0x08008981   0x44  Code  Lc  at.o [1]
+CPU_DisableInt          0x08003aa3    0x2  Code  Gb  lmiclowlevelapi.o [1]
+CPU_EnableInt           0x08003aa5    0x2  Code  Gb  lmiclowlevelapi.o [1]
+CSTACK$$Base            0x20000060          --   Gb  - Linker created -
+CSTACK$$Limit           0x20000860          --   Gb  - Linker created -
+DEVEUI                  0x20000030    0x8  Data  Lc  oslmic.o [1]
+DEVKEY                  0x20000038   0x10  Data  Lc  oslmic.o [1]
+DMA1_Channel1_IRQHandler
+                        0x0800af93    0x2  Code  Gb  stm32f0xx_it.o [1]
+DMA1_Channel2_3_IRQHandler
+                        0x0800af95    0x2  Code  Gb  stm32f0xx_it.o [1]
+DR2HSYM_osticks         0x0800b280   0x20  Data  Lc  lmic.o [1]
+DRADJUST                0x0800b460    0xc  Data  Lc  lmic.o [1]
+Drv_IOCtl_Init          0x0800aa25   0x5e  Code  Gb  Drv_IOCtl.o [1]
+Drv_SX127X_RxChainCalibration
+                        0x08004933   0xc4  Code  Gb  Drv_sx127x.o [1]
+Drv_SX127x_BurstRead    0x08004755   0x86  Code  Gb  Drv_sx127x.o [1]
+Drv_SX127x_BurstWrite   0x080047e1   0x76  Code  Gb  Drv_sx127x.o [1]
+Drv_SX127x_CheckVersion
+                        0x080048a5   0x8e  Code  Gb  Drv_sx127x.o [1]
+Drv_SX127x_Control      0x08004589   0xbc  Code  Gb  Drv_sx127x.o [1]
+Drv_SX127x_FSK_Flush_RSSI
+                        0x080057d3   0x38  Code  Gb  Drv_sx127x.o [1]
+Drv_SX127x_FSK_GetBandwidthRegVal
+                        0x080052d9   0x36  Code  Gb  Drv_sx127x.o [1]
+Drv_SX127x_FSK_SetBitrate
+                        0x08005199   0x4e  Code  Gb  Drv_sx127x.o [1]
+Drv_SX127x_FSK_SetCRC   0x0800527d   0x5c  Code  Gb  Drv_sx127x.o [1]
+Drv_SX127x_FSK_SetDefaultParam
+                        0x080050df   0xb4  Code  Gb  Drv_sx127x.o [1]
+Drv_SX127x_FSK_SetFdev  0x080051f5   0x82  Code  Gb  Drv_sx127x.o [1]
+Drv_SX127x_FSK_SetMode  0x08004fdd  0x102  Code  Gb  Drv_sx127x.o [1]
+Drv_SX127x_FSK_SetPreambleLength
+                        0x08005375   0x32  Code  Gb  Drv_sx127x.o [1]
+Drv_SX127x_FSK_SetRxBandwidth
+                        0x08005315   0x60  Code  Gb  Drv_sx127x.o [1]
+Drv_SX127x_IOCtl_DataInit
+                        0x08003ee5   0x6a  Code  Gb  Drv_SX127x_IOCTL.o [1]
+Drv_SX127x_IOCtl_In     0x080040b7   0x2c  Code  Gb  Drv_SX127x_IOCTL.o [1]
+Drv_SX127x_IOCtl_Init   0x08003f4f  0x120  Code  Gb  Drv_SX127x_IOCTL.o [1]
+Drv_SX127x_IOCtl_Out    0x0800406f   0x48  Code  Gb  Drv_SX127x_IOCTL.o [1]
+Drv_SX127x_Init         0x080041e9  0x390  Code  Gb  Drv_sx127x.o [1]
+Drv_SX127x_LoRa_Flush_RSSIandSNR
+                        0x080055bd  0x216  Code  Gb  Drv_sx127x.o [1]
+Drv_SX127x_LoRa_SetBandwidth
+                        0x08004e77   0xbe  Code  Gb  Drv_sx127x.o [1]
+Drv_SX127x_LoRa_SetCRC  0x08004e1b   0x5c  Code  Gb  Drv_sx127x.o [1]
+Drv_SX127x_LoRa_SetCodeRate
+                        0x08004dcb   0x50  Code  Gb  Drv_sx127x.o [1]
+Drv_SX127x_LoRa_SetInvertIQ
+                        0x08004d59   0x72  Code  Gb  Drv_sx127x.o [1]
+Drv_SX127x_LoRa_SetLowDataRateOptimize
+                        0x08004c45   0x82  Code  Gb  Drv_sx127x.o [1]
+Drv_SX127x_LoRa_SetMapping_DIO_0
+                        0x0800580b   0x16  Code  Gb  Drv_sx127x.o [1]
+Drv_SX127x_LoRa_SetMode
+                        0x080049fd  0x134  Code  Gb  Drv_sx127x.o [1]
+Drv_SX127x_LoRa_SetNbtrigPeaks
+                        0x08004c09   0x3c  Code  Gb  Drv_sx127x.o [1]
+Drv_SX127x_LoRa_SetPreambleLength
+                        0x08004f89   0x32  Code  Gb  Drv_sx127x.o [1]
+Drv_SX127x_LoRa_SetSF   0x08004cd1   0x80  Code  Gb  Drv_sx127x.o [1]
+Drv_SX127x_LoRa_SetSymbTimeout
+                        0x08004f35   0x54  Code  Gb  Drv_sx127x.o [1]
+Drv_SX127x_LoRa_SetSyncWord
+                        0x08004fbb   0x1e  Code  Gb  Drv_sx127x.o [1]
+Drv_SX127x_Radio_Control
+                        0x08005e05  0x2c2  Code  Gb  Drv_sx127x.o [1]
+Drv_SX127x_Radio_DioIntHandle
+                        0x08005b9d   0xae  Code  Gb  Drv_sx127x.o [1]
+Drv_SX127x_Radio_Listen
+                        0x08005c51  0x1ae  Code  Gb  Drv_sx127x.o [1]
+Drv_SX127x_Radio_Read   0x080058ad  0x160  Code  Gb  Drv_sx127x.o [1]
+Drv_SX127x_Radio_Send   0x08005ab9   0xe0  Code  Gb  Drv_sx127x.o [1]
+Drv_SX127x_Radio_SymTimeout
+                        0x08005821   0x6a  Code  Gb  Drv_sx127x.o [1]
+Drv_SX127x_Radio_Write  0x08005a15   0x9e  Code  Gb  Drv_sx127x.o [1]
+Drv_SX127x_SetFreq      0x08004857   0x4a  Code  Gb  Drv_sx127x.o [1]
+Drv_SX127x_SetModulation
+                        0x08004b35   0xc6  Code  Gb  Drv_sx127x.o [1]
+Drv_SX127x_SetOutPower  0x080053ef  0x1c6  Code  Gb  Drv_sx127x.o [1]
+Drv_SX127x_SetPABOOST   0x080053b5   0x3a  Code  Gb  Drv_sx127x.o [1]
+Drv_SX127x_SingleRead   0x08004651   0x94  Code  Gb  Drv_sx127x.o [1]
+Drv_SX127x_SingleWrite  0x080046ed   0x64  Code  Gb  Drv_sx127x.o [1]
+Drv_SX127x_WAIT_DIO0ms  0x080041a7   0x36  Code  Gb  Drv_sx127x.o [1]
+Drv_SX127x_WAIT_MS      0x0800418d   0x1a  Code  Gb  Drv_sx127x.o [1]
+Drv_Spix_Init           0x08006885   0xaa  Code  Gb  Drv_Spi.o [1]
+Drv_Spix_ReadWriteByte  0x0800692f   0x38  Code  Gb  Drv_Spi.o [1]
+Drv_Spix_Transfer       0x08006971   0x4c  Code  Gb  Drv_Spi.o [1]
+Drv_Usart_Init          0x08008d5d  0x180  Code  Gb  Drv_Usart.o [1]
+Drv_Usart_Read          0x08008edd   0xb8  Code  Gb  Drv_Usart.o [1]
+Drv_Usart_Write         0x08008f95   0x58  Code  Gb  Drv_Usart.o [1]
+EXTI0_1_IRQHandler      0x0800af97   0x18  Code  Gb  stm32f0xx_it.o [1]
+EXTI4_15_IRQHandler     0x0800afb5    0xa  Code  Gb  stm32f0xx_it.o [1]
+EXTI_ClearITPendingBit  0x080067f7    0x6  Code  Gb  stm32f0xx_exti.o [1]
+EXTI_Init               0x08006771   0x86  Code  Gb  stm32f0xx_exti.o [1]
+FLASH_ErasePage         0x08003cf5   0x48  Code  Gb  stm32f0xx_flash.o [1]
+FLASH_GetStatus         0x08003dbd   0x2e  Code  Gb  stm32f0xx_flash.o [1]
+FLASH_ProgramWord       0x08003d3d   0x6a  Code  Gb  stm32f0xx_flash.o [1]
+FLASH_Unlock            0x08003cdd   0x18  Code  Gb  stm32f0xx_flash.o [1]
+FLASH_WaitForLastOperation
+                        0x08003df1   0x26  Code  Gb  stm32f0xx_flash.o [1]
+FLASH_Write             0x080036c9   0x22  Code  Lc  lmicapi.o [1]
+GPIO_Init               0x08006611   0xa0  Code  Gb  stm32f0xx_gpio.o [1]
+GPIO_PinAFConfig        0x080066bb   0x5c  Code  Gb  stm32f0xx_gpio.o [1]
+GPIO_ResetBits          0x080066b7    0x4  Code  Gb  stm32f0xx_gpio.o [1]
+GPIO_SetBits            0x080066b1    0x6  Code  Gb  stm32f0xx_gpio.o [1]
+HardFault_Handler       0x0800af71    0x4  Code  Gb  stm32f0xx_it.o [1]
+IOCtl_gpio_Mode         0x0800b544    0x4  Data  Gb  Drv_IOCtl.o [1]
+IOCtl_gpio_OType        0x0800b548    0x4  Data  Gb  Drv_IOCtl.o [1]
+IOCtl_gpio_pins         0x0800b520    0x8  Data  Gb  Drv_IOCtl.o [1]
+IOCtl_gpio_port         0x20000ec4    0x4  Data  Gb  Drv_IOCtl.o [1]
+IOCtl_gpio_port_clk     0x0800b43c    0xc  Data  Gb  Drv_IOCtl.o [1]
+LMIC                    0x20000860  0x158  Data  Gb  lmic.o [1]
+LMIC_init               0x08002275    0x2  Code  Gb  lmic.o [1]
+LMIC_reset              0x080021fd   0x6c  Code  Gb  lmic.o [1]
+LMIC_setTxData          0x08002285   0x22  Code  Gb  lmic.o [1]
+LMIC_setTxData2         0x080022b9   0x38  Code  Gb  lmic.o [1]
+LMIC_setupChannel       0x08000871   0x7e  Code  Gb  lmic.o [1]
+LMIC_startJoining       0x08001b2b   0x5c  Code  Gb  lmic.o [1]
+LORA_RXDONE_FIXUP       0x0800b378   0x10  Data  Lc  lmicradio.o [1]
+LoadInt                 0x080074bd   0x68  Code  Lc  xprintffull_nomb.o [3]
+NMI_Handler             0x0800af6d    0x4  Code  Gb  stm32f0xx_it.o [1]
+NVIC_Init               0x08006811   0x68  Code  Gb  stm32f0xx_misc.o [1]
+NVIC_SetPriority        0x0800a8a5   0x84  Code  Lc  Main.o [1]
+OS                      0x20000eb8    0x8  Data  Lc  oslmic.o [1]
+OS_checkTime            0x08002e1f   0x18  Code  Lc  oslmic.o [1]
+PWR_BackupAccessCmd     0x080065bd   0x26  Code  Gb  stm32f0xx_pwr.o [1]
+PWR_EnterSleepMode      0x080065e3   0x20  Code  Gb  stm32f0xx_pwr.o [1]
+PendSV_Handler          0x0800af79    0x4  Code  Gb  stm32f0xx_it.o [1]
+PortIDEnum              0x20000024    0x4  Data  Gb  Drv_Usart.o [1]
+RADIO_DioIsrCB          0x08003375   0x2c  Code  Gb  lmicradio.o [1]
+RADIO_ReadPacketRssi    0x08003a95    0xe  Code  Gb  lmiclowlevelapi.o [1]
+RADIO_Sleep             0x08003a93    0x2  Code  Gb  lmiclowlevelapi.o [1]
+RADIO_StartReceive      0x080039a9   0xea  Code  Gb  lmiclowlevelapi.o [1]
+RADIO_StartSend         0x080038d5   0xd4  Code  Gb  lmiclowlevelapi.o [1]
+RCC_AHBPeriphClockCmd   0x080064bd   0x20  Code  Gb  stm32f0xx_rcc.o [1]
+RCC_APB1PeriphClockCmd  0x080064fd   0x20  Code  Gb  stm32f0xx_rcc.o [1]
+RCC_APB2PeriphClockCmd  0x080064dd   0x20  Code  Gb  stm32f0xx_rcc.o [1]
+RCC_ClearFlag           0x0800658b   0x10  Code  Gb  stm32f0xx_rcc.o [1]
+RCC_DeInit              0x080060cd   0x68  Code  Gb  stm32f0xx_rcc.o [1]
+RCC_GetClocksFreq       0x08006285  0x200  Code  Gb  stm32f0xx_rcc.o [1]
+RCC_GetFlagStatus       0x08006541   0x4a  Code  Gb  stm32f0xx_rcc.o [1]
+RCC_GetSYSCLKSource     0x08006215    0xa  Code  Gb  stm32f0xx_rcc.o [1]
+RCC_HCLKConfig          0x08006229   0x14  Code  Gb  stm32f0xx_rcc.o [1]
+RCC_HSEConfig           0x08006135    0xc  Code  Gb  stm32f0xx_rcc.o [1]
+RCC_LSEConfig           0x0800617b   0x24  Code  Gb  stm32f0xx_rcc.o [1]
+RCC_PCLKConfig          0x08006245   0x16  Code  Gb  stm32f0xx_rcc.o [1]
+RCC_PLLCmd              0x080061b9   0x26  Code  Gb  stm32f0xx_rcc.o [1]
+RCC_PLLConfig           0x0800619f   0x1a  Code  Gb  stm32f0xx_rcc.o [1]
+RCC_PREDIV1Config       0x080061df   0x14  Code  Gb  stm32f0xx_rcc.o [1]
+RCC_RTCCLKCmd           0x08006491   0x26  Code  Gb  stm32f0xx_rcc.o [1]
+RCC_RTCCLKConfig        0x08006485    0xc  Code  Gb  stm32f0xx_rcc.o [1]
+RCC_SYSCLKConfig        0x080061fd   0x14  Code  Gb  stm32f0xx_rcc.o [1]
+RCC_WaitForHSEStartUp   0x08006141   0x3a  Code  Gb  stm32f0xx_rcc.o [1]
+RTC_AlarmCmd            0x0800973f   0x6e  Code  Gb  stm32f0xx_rtc.o [1]
+RTC_AlarmStructInit     0x08009721   0x1e  Code  Gb  stm32f0xx_rtc.o [1]
+RTC_AlarmSubSecondConfig
+                        0x080097b5   0x20  Code  Gb  stm32f0xx_rtc.o [1]
+RTC_Bcd2ToByte          0x0800988d   0x16  Code  Lc  stm32f0xx_rtc.o [1]
+RTC_ByteToBcd2          0x08009875   0x18  Code  Lc  stm32f0xx_rtc.o [1]
+RTC_ClearITPendingBit   0x08009849   0x1c  Code  Gb  stm32f0xx_rtc.o [1]
+RTC_Config              0x080090c1   0xca  Code  Gb  Drv_rtc.o [1]
+RTC_EnterInitMode       0x080094a9   0x4c  Code  Gb  stm32f0xx_rtc.o [1]
+RTC_ExitInitMode        0x080094f5    0xe  Code  Gb  stm32f0xx_rtc.o [1]
+RTC_GetSubSecond        0x0800963d    0xc  Code  Gb  stm32f0xx_rtc.o [1]
+RTC_IRQHandler          0x0800927d   0x24  Code  Gb  Drv_rtc.o [1]
+RTC_ITConfig            0x080097ed   0x5a  Code  Gb  stm32f0xx_rtc.o [1]
+RTC_Init                0x08009431   0x5a  Code  Gb  stm32f0xx_rtc.o [1]
+RTC_InitStructure       0x20000e74    0xc  Data  Lc  Drv_rtc.o [1]
+RTC_SetAlarm            0x0800964d   0xc8  Code  Gb  stm32f0xx_rtc.o [1]
+RTC_SetTime             0x08009571   0xbe  Code  Gb  stm32f0xx_rtc.o [1]
+RTC_Start               0x0800918b   0xf2  Code  Gb  Drv_rtc.o [1]
+RTC_WaitForSynchro      0x08009503   0x62  Code  Gb  stm32f0xx_rtc.o [1]
+RTC_WriteProtectionCmd  0x0800948b   0x1e  Code  Gb  stm32f0xx_rtc.o [1]
+RadioDebug              0x080033a1    0x6  Code  Gb  lmicradio.o [1]
+Region$$Table$$Base     0x0800b25c          --   Gb  - Linker created -
+Region$$Table$$Limit    0x0800b280          --   Gb  - Linker created -
+RssiOffsetHF            0x0800b010   0x50  Data  Gb  Drv_sx127x.o [1]
+RssiOffsetLF            0x0800afc0   0x50  Data  Gb  Drv_sx127x.o [1]
+SENSITIVITY             0x0800b338   0x18  Data  Lc  lmic.o [1]
+SPI_Cmd                 0x08006e9b   0x1c  Code  Gb  stm32f0xx_spi.o [1]
+SPI_I2S_GetFlagStatus   0x08006edd   0x16  Code  Gb  stm32f0xx_spi.o [1]
+SPI_Init                0x08006e41   0x5a  Code  Gb  stm32f0xx_spi.o [1]
+SPI_ReceiveData8        0x08006ec1    0xa  Code  Gb  stm32f0xx_spi.o [1]
+SPI_SendData8           0x08006eb7    0xa  Code  Gb  stm32f0xx_spi.o [1]
+SVC_Handler             0x0800af75    0x4  Code  Gb  stm32f0xx_it.o [1]
+SX127xIOCtl_IRQ_PIN     0x0800b550    0x1  Data  Gb  Drv_SX127x_IOCTL.o [1]
+SX127xIOCtl_gpio_Mode   0x0800b528    0x8  Data  Gb  Drv_SX127x_IOCTL.o [1]
+SX127xIOCtl_gpio_OType  0x0800b530    0x8  Data  Gb  Drv_SX127x_IOCTL.o [1]
+SX127xIOCtl_gpio_pins   0x0800b448    0xc  Data  Gb  Drv_SX127x_IOCTL.o [1]
+SX127xIOCtl_gpio_port   0x20000ec8    0x4  Data  Gb  Drv_SX127x_IOCTL.o [1]
+SX127xIOCtl_gpio_port_clk
+                        0x0800b320   0x18  Data  Gb  Drv_SX127x_IOCTL.o [1]
+SX127x_IOCtl_IRQClear   0x0800414b    0xe  Code  Gb  Drv_SX127x_IOCTL.o [1]
+SX127x_IOCtl_IRQHandler
+                        0x080040e3   0x38  Code  Gb  Drv_SX127x_IOCTL.o [1]
+SX127x_IOCtl_IRQPend    0x0800411b   0x30  Code  Gb  Drv_SX127x_IOCTL.o [1]
+SYSCFG_EXTILineConfig   0x08006719   0x54  Code  Gb  stm32f0xx_syscfg.o [1]
+SetSysClock             0x0800abfd   0xbe  Code  Lc  system_stm32f0xx.o [1]
+SignalBwLog             0x0800b308   0x18  Data  Gb  Drv_sx127x.o [1]
+SysTick_Config          0x0800a929   0x30  Code  Lc  Main.o [1]
+SysTick_Handler         0x0800af7d    0x8  Code  Gb  stm32f0xx_it.o [1]
+SystemClock_Config      0x0800a959   0x4e  Code  Gb  Main.o [1]
+SystemCoreClock         0x20000058    0x4  Data  Gb  system_stm32f0xx.o [1]
+SystemInit              0x0800ab89   0x74  Code  Gb  system_stm32f0xx.o [1]
+TASK_LmicCreate         0x08003e19   0x42  Code  Gb  lmic_task.o [1]
+TASK_RadioCheckCreate   0x0800aae5    0xc  Code  Gb  radiocheck_task.o [1]
+TASK_RadioCheckStart    0x0800aaf1    0x8  Code  Gb  radiocheck_task.o [1]
+TASK_UartStart          0x0800ab63   0x10  Code  Gb  uart_task.o [1]
+TIM3_IRQHandler         0x0800af85    0x2  Code  Gb  stm32f0xx_it.o [1]
+TIMER_TxRxTimeoutCreate
+                        0x08003aa7   0x10  Code  Gb  lmiclowlevelapi.o [1]
+TIMER_TxRxTimeoutStart  0x08003ab7    0xa  Code  Gb  lmiclowlevelapi.o [1]
+TIMER_TxRxTimeoutStop   0x08003ac1    0xa  Code  Gb  lmiclowlevelapi.o [1]
+TXPOWLEVELS             0x0800b368   0x10  Data  Lc  lmic.o [1]
+UART_RxBytes            0x08009035   0x30  Code  Gb  Drv_Usart.o [1]
+USART1_IRQHandler       0x0800af87    0xa  Code  Gb  stm32f0xx_it.o [1]
+USART2_IRQHandler       0x0800af91    0x2  Code  Gb  stm32f0xx_it.o [1]
+USART_Cmd               0x080093af   0x1c  Code  Gb  stm32f0xx_usart.o [1]
+USART_IRQHandler        0x08008fed   0x48  Code  Gb  Drv_Usart.o [1]
+USART_ITConfig          0x080093f1   0x40  Code  Gb  stm32f0xx_usart.o [1]
+USART_Init              0x080092e5   0xca  Code  Gb  stm32f0xx_usart.o [1]
+USART_SendData          0x080093d9    0x8  Code  Gb  stm32f0xx_usart.o [1]
+_DR2RPS_CRC             0x0800b454    0xc  Data  Gb  lmic.o [1]
+_GenldFullNoMb          0x08007acd  0x2aa  Code  Lc  xprintffull_nomb.o [3]
+_LdtobFullNoMb          0x08007655  0x464  Code  Lc  xprintffull_nomb.o [3]
+_LitobFullNoMb          0x08007525  0x12a  Code  Lc  xprintffull_nomb.o [3]
+_PrintfFullNoMb         0x08006ef5  0x5c8  Code  Gb  xprintffull_nomb.o [3]
+_PutcharsFullNoMb       0x08007d77   0x30  Code  Lc  xprintffull_nomb.o [3]
+_SNProut                0x0800b2a1   0x1c  Code  Gb  xsnprout.o [3]
+__ICFEDIT_region_RAM_end__ {Abs}
+                        0x20001fff         Data  Gb  command line/config [2]
+__ICFEDIT_region_RAM_start__ {Abs}
+                        0x20000000         Data  Gb  command line/config [2]
+__aeabi_cdcmple         0x08007de7         Code  Gb  DblCmpLe.o [4]
+__aeabi_cdrcmple        0x08007e19         Code  Gb  DblCmpGe.o [4]
+__aeabi_d2iz            0x08006ab5         Code  Gb  DblToI32.o [4]
+__aeabi_d2uiz           0x08006ad9         Code  Gb  DblToI32.o [4]
+__aeabi_dadd            0x08006b07         Code  Gb  DblAddSub.o [4]
+__aeabi_ddiv            0x080069f1         Code  Gb  DblDiv.o [4]
+__aeabi_dmul            0x08006cbb         Code  Gb  DblMul.o [4]
+__aeabi_dsub            0x08006bcd         Code  Gb  DblAddSub.o [4]
+__aeabi_i2d             0x080069bd         Code  Gb  I32ToDbl.o [4]
+__aeabi_idiv            0x080031e5         Code  Gb  I32DivModFast.o [5]
+__aeabi_idiv0           0x08003cd5         Code  Gb  IntDivZer.o [5]
+__aeabi_idivmod         0x080031e5         Code  Gb  I32DivModFast.o [5]
+__aeabi_ldiv0           0x08003cd9         Code  Gb  I64DivZer.o [5]
+__aeabi_ldivmod         0x080032cb         Code  Gb  I64DivMod.o [5]
+__aeabi_lmul            0x08003299         Code  Gb  I64Mul.o [5]
+__aeabi_memclr4         0x0800239d         Code  Gb  ABImemset.o [5]
+__aeabi_memclr8         0x0800239d         Code  Gb  ABImemset.o [5]
+__aeabi_memcpy          0x080023a1         Code  Gb  ABImemcpy.o [5]
+__aeabi_memcpy4         0x080023c9         Code  Wk  ABImemcpy.o [5]
+__aeabi_memset          0x0800234d         Code  Gb  ABImemset.o [5]
+__aeabi_ui2d            0x080069d1         Code  Gb  I32ToDbl.o [4]
+__aeabi_uidiv           0x080031eb         Code  Gb  I32DivModFast.o [5]
+__aeabi_uidivmod        0x080031eb         Code  Gb  I32DivModFast.o [5]
+__aeabi_uldivmod        0x08003309         Code  Gb  I64DivMod.o [5]
+__cmain                 0x0800b2bd         Code  Gb  cmain.o [5]
+__exit                  0x0800b2f1   0x14  Code  Gb  exit.o [6]
+__iar_Dscale            0x08007e4d   0x80  Code  Gb  xdscale.o [4]
+__iar_Memchr            0x08007dcf   0x18  Code  Gb  memchr.o [5]
+__iar_Memset4_word      0x0800236d         Code  Gb  ABImemset.o [5]
+__iar_Memset_word       0x08002359         Code  Gb  ABImemset.o [5]
+__iar_Strchr            0x08007dab   0x14  Code  Gb  strchr.o [5]
+__iar_copy_init3        0x0800b1b5   0x30  Code  Gb  copy_init3.o [5]
+__iar_d2uiz             0x08006add         Code  Gb  DblToI32.o [4]
+__iar_data_init3        0x0800b235   0x28  Code  Gb  data_init.o [5]
+__iar_program_start     0x0800b46d         Code  Gb  cstartup_M.o [5]
+__iar_ui2d              0x080069d5         Code  Gb  I32ToDbl.o [4]
+__iar_zero_init3        0x0800b09d   0x3c  Code  Gb  zero_init3.o [5]
+__low_level_init        0x0800b2d7    0x4  Code  Gb  low_level_init.o [3]
+__vector_table          0x08000000         Data  Gb  startup_stm32f030.o [1]
+_call_main              0x0800b2c9         Code  Gb  cmain.o [5]
+_exit                   0x0800b2e5         Code  Gb  cexit.o [5]
+_main                   0x0800b2d3         Code  Gb  cmain.o [5]
+aes_appendMic           0x0800028b   0x38  Code  Lc  lmic.o [1]
+aes_appendMic0          0x080002c3   0x24  Code  Lc  lmic.o [1]
+aes_cipher              0x0800033d   0x62  Code  Lc  lmic.o [1]
+aes_encrypt             0x08000319   0x1a  Code  Lc  lmic.o [1]
+aes_sessKeys            0x080003a5   0x5e  Code  Lc  lmic.o [1]
+aes_verifyMic           0x08000247   0x44  Code  Lc  lmic.o [1]
+aes_verifyMic0          0x080002e7   0x30  Code  Lc  lmic.o [1]
+aesroundkeys            0x080023fd   0xbe  Code  Lc  aes.o [1]
+at_buf                  0x20000b80   0xc8  Data  Lc  uart_task.o [1]
+at_equ_cmds             0x0800ae98   0x70  Data  Lc  at.o [1]
+at_que_cmds             0x0800b0d8   0x38  Data  Lc  at.o [1]
+at_short_cmds           0x0800b518    0x8  Data  Lc  at.o [1]
+buildDataFrame          0x08001701  0x28c  Code  Lc  lmic.o [1]
+buildJoinRequest        0x08001ac1   0x3a  Code  Lc  lmic.o [1]
+cIOCtl_gpio_port        0x20000000    0xc  Data  Gb  Drv_IOCtl.o [1]
+cSX127xIOCtl_gpio_port  0x2000000c   0x18  Data  Gb  Drv_SX127x_IOCTL.o [1]
+calcAirTime             0x08000429   0xea  Code  Gb  lmic.o [1]
+calcBcnRxWindowFromMillis
+                        0x08000591   0x74  Code  Lc  lmic.o [1]
+calcRxWindow            0x08000521   0x68  Code  Lc  lmic.o [1]
+cfg                     0x20000e0c   0x14  Data  Lc  at.o [1]
+cfg                     0x20000e20   0x14  Data  Lc  lmicradio.o [1]
+char2byte               0x08007f05   0x3e  Code  Lc  at.o [1]
+convFreq                0x080008f5   0x42  Code  Lc  lmic.o [1]
+currentmode             0x20000edc    0x1  Data  Lc  lmicradio.o [1]
+decDR                   0x0800011b   0x12  Code  Gb  lmic.o [1]
+decodeBeacon            0x08000c21   0xc4  Code  Lc  lmic.o [1]
+decodeFrame             0x08000d71  0x48e  Code  Lc  lmic.o [1]
+deltaticks              0x08002def   0x20  Code  Lc  oslmic.o [1]
+div                     0x08007ecd   0x20  Code  Gb  div.o [3]
+dndr2rps                0x08000109   0x12  Code  Gb  lmic.o [1]
+engineUpdate            0x08001f69  0x266  Code  Lc  lmic.o [1]
+exit                    0x0800b2db    0x8  Code  Gb  exit.o [3]
+flash_param             0x20000cf8   0x94  Data  Gb  lmicapi.o [1]
+fskBandwidth            0x0800adf0   0xa8  Data  Gb  Drv_sx127x.o [1]
+getBw                   0x080000bb    0xa  Code  Gb  lmic.o [1]
+getCr                   0x080000c5    0xa  Code  Gb  lmic.o [1]
+getIh                   0x080000f5    0x8  Code  Gb  lmic.o [1]
+getNocrc                0x080000dd    0xc  Code  Gb  lmic.o [1]
+getSensitivity          0x08000403   0x26  Code  Gb  lmic.o [1]
+getSf                   0x080000b5    0x6  Code  Gb  lmic.o [1]
+initDefaultChannels     0x080007e5   0x68  Code  Lc  lmic.o [1]
+initJoinLoop            0x08000a8f   0x40  Code  Lc  lmic.o [1]
+initfunc                0x08002d63    0x8  Code  Lc  oslmic.o [1]
+initjob                 0x20000e8c    0xc  Data  Lc  oslmic.o [1]
+jreqDone                0x080015a3    0xc  Code  Lc  lmic.o [1]
+lmic_getrx2param        0x08003139    0xe  Code  Gb  oslmic.o [1]
+lmic_gettrasstatus      0x0800314d   0x14  Code  Gb  oslmic.o [1]
+lmic_idle               0x08002fb1   0x26  Code  Gb  oslmic.o [1]
+lmic_init               0x08002f75   0x36  Code  Gb  oslmic.o [1]
+lmic_isconnect          0x08002fe1   0x14  Code  Gb  oslmic.o [1]
+lmic_receive            0x08003071   0x30  Code  Gb  oslmic.o [1]
+lmic_send               0x0800301d   0x54  Code  Gb  oslmic.o [1]
+lmic_setband            0x080030d5   0x1c  Code  Gb  oslmic.o [1]
+lmic_setbasefreq        0x080030a5   0x2c  Code  Gb  oslmic.o [1]
+lmic_setrx2param        0x0800311b   0x1e  Code  Gb  oslmic.o [1]
+lmic_setsf              0x080030f5   0x26  Code  Gb  oslmic.o [1]
+lmic_start              0x08003e5b   0x22  Code  Gb  lmic_task.o [1]
+lmic_stop               0x08003e7d   0x22  Code  Gb  lmic_task.o [1]
+lmic_task               0x08002ef1   0x84  Code  Gb  oslmic.o [1]
+lmic_task_id            0x20000ed9    0x1  Data  Lc  lmic_task.o [1]
+lmic_task_test          0x20000eda    0x1  Data  Lc  lmic_task.o [1]
+lmic_timeoutcb          0x0800366f   0x20  Code  Gb  lmicradio.o [1]
+lmic_txstart            0x08003e9f   0x18  Code  Gb  lmic_task.o [1]
+lmic_txstop             0x08003eb7   0x12  Code  Gb  lmic_task.o [1]
+lmicapi_getappeui       0x08003783    0xa  Code  Gb  lmicapi.o [1]
+lmicapi_getappkey       0x0800375b    0xa  Code  Gb  lmicapi.o [1]
+lmicapi_getid           0x08003717    0xa  Code  Gb  lmicapi.o [1]
+lmicapi_getrx2param     0x080037b3    0x8  Code  Gb  lmicapi.o [1]
+lmicapi_init            0x080036eb    0xc  Code  Gb  lmicapi.o [1]
+lmicapi_netstatus       0x0800382b   0x20  Code  Gb  lmicapi.o [1]
+lmicapi_readid          0x08003895   0x1e  Code  Gb  lmicapi.o [1]
+lmicapi_readparam       0x08003871   0x24  Code  Gb  lmicapi.o [1]
+lmicapi_receive         0x0800380b   0x20  Code  Gb  lmicapi.o [1]
+lmicapi_reset           0x0800370b    0xc  Code  Gb  lmicapi.o [1]
+lmicapi_saveparam       0x0800384b   0x26  Code  Gb  lmicapi.o [1]
+lmicapi_send            0x080037bb   0x2c  Code  Gb  lmicapi.o [1]
+lmicapi_setappeui       0x08003765   0x1e  Code  Gb  lmicapi.o [1]
+lmicapi_setappkey       0x0800373d   0x1e  Code  Gb  lmicapi.o [1]
+lmicapi_setband         0x08003795    0xa  Code  Gb  lmicapi.o [1]
+lmicapi_setbasefreq     0x0800378d    0x8  Code  Gb  lmicapi.o [1]
+lmicapi_setid           0x08003721   0x1c  Code  Gb  lmicapi.o [1]
+lmicapi_setrx2param     0x080037a9    0xa  Code  Gb  lmicapi.o [1]
+lmicapi_setsf           0x0800379f    0xa  Code  Gb  lmicapi.o [1]
+lmicapi_start           0x080036f7    0xc  Code  Gb  lmicapi.o [1]
+lmicapi_stop            0x08003703    0x8  Code  Gb  lmicapi.o [1]
+lmicapi_transstatus     0x080037e7   0x24  Code  Gb  lmicapi.o [1]
+lowerDR                 0x08000145   0x1a  Code  Gb  lmic.o [1]
+main                    0x0800a9a7   0x62  Code  Gb  Main.o [1]
+mapChannels             0x08000945   0x54  Code  Lc  lmic.o [1]
+micB0                   0x08000209   0x3e  Code  Lc  lmic.o [1]
+netstatus               0x20000edb    0x1  Data  Gb  lmic_task.o [1]
+nextJoinState           0x08000ad9   0x68  Code  Lc  lmic.o [1]
+nextTx                  0x08000a11   0x68  Code  Lc  lmic.o [1]
+onBcnRx                 0x080019bd   0x74  Code  Lc  lmic.o [1]
+onEvent                 0x08002d6b   0x68  Code  Gb  oslmic.o [1]
+onJoinFailed            0x08001389    0xa  Code  Lc  lmic.o [1]
+os_aes                  0x080024c9  0x7fc  Code  Gb  aes.o [1]
+os_clearCallback        0x08002e5d   0x2e  Code  Gb  oslmic.o [1]
+os_crc16                0x080001cf   0x3a  Code  Gb  lmic.o [1]
+os_getArtEui            0x08002ccd   0x18  Code  Gb  oslmic.o [1]
+os_getBattLevel         0x080001cb    0x4  Code  Gb  lmic.o [1]
+os_getDevEui            0x08002cff   0x18  Code  Gb  oslmic.o [1]
+os_getDevKey            0x08002d31   0x18  Code  Gb  oslmic.o [1]
+os_getTime              0x08002e37    0x8  Code  Gb  oslmic.o [1]
+os_init                 0x08002dd3   0x1c  Code  Gb  oslmic.o [1]
+os_radio                0x08003635   0x3a  Code  Gb  lmicradio.o [1]
+os_rlsbf2               0x0800015f    0xc  Code  Gb  lmic.o [1]
+os_rlsbf4               0x0800016b   0x16  Code  Gb  lmic.o [1]
+os_rmsbf4               0x08000181   0x16  Code  Gb  lmic.o [1]
+os_setArtEui            0x08002ce5   0x1a  Code  Gb  oslmic.o [1]
+os_setCallback          0x08002e8b   0x2a  Code  Gb  oslmic.o [1]
+os_setDevEui            0x08002d17   0x1a  Code  Gb  oslmic.o [1]
+os_setDevKey            0x08002d49   0x1a  Code  Gb  oslmic.o [1]
+os_setTimedCallback     0x08002eb5   0x3c  Code  Gb  oslmic.o [1]
+os_waitUntil            0x08002e0f   0x10  Code  Gb  oslmic.o [1]
+os_wlsbf2               0x08000197    0xc  Code  Gb  lmic.o [1]
+os_wlsbf4               0x080001a3   0x14  Code  Gb  lmic.o [1]
+os_wmsbf4               0x080001b7   0x14  Code  Gb  lmic.o [1]
+osal_createusertask     0x08003b01   0x26  Code  Gb  osal.o [1]
+osal_delay              0x08003b71   0x1c  Code  Gb  osal.o [1]
+osal_getTime            0x08003c5f    0x6  Code  Gb  osal.o [1]
+osal_run                0x08003b27   0x4a  Code  Gb  osal.o [1]
+osal_tick               0x08003b8d   0xd2  Code  Gb  osal.o [1]
+osal_timerCreate        0x08003c65   0x40  Code  Gb  osal.o [1]
+osal_timerStart         0x08003cc1    0xa  Code  Gb  osal.o [1]
+osal_timerStop          0x08003ccb    0xa  Code  Gb  osal.o [1]
+processBeacon           0x08001d99  0x15c  Code  Lc  lmic.o [1]
+processDnData           0x08001c09  0x16e  Code  Lc  lmic.o [1]
+processJoinAccept       0x08001393  0x1be  Code  Lc  lmic.o [1]
+processPingRx           0x08001bad   0x26  Code  Lc  lmic.o [1]
+processRx1DnData        0x0800161d   0x38  Code  Lc  lmic.o [1]
+processRx1Jacc          0x08001579   0x1c  Code  Lc  lmic.o [1]
+processRx2DnData        0x080015c9   0x32  Code  Lc  lmic.o [1]
+processRx2DnDataDelay   0x080015c1    0x8  Code  Lc  lmic.o [1]
+processRx2Jacc          0x08001555   0x16  Code  Lc  lmic.o [1]
+radio_irq_handler       0x080035a5   0x88  Code  Gb  lmicradio.o [1]
+radio_rand1             0x0800357d   0x28  Code  Gb  lmicradio.o [1]
+radiocheck_tsk          0x0800aa9d   0x48  Code  Gb  radiocheck_task.o [1]
+randbuf                 0x20000e64   0x10  Data  Lc  lmicradio.o [1]
+reportEvent             0x08000b55    0xe  Code  Lc  lmic.o [1]
+rndDelay                0x080006f9   0x4e  Code  Lc  lmic.o [1]
+rtcstart                0x20000ed8    0x1  Data  Gb  Drv_rtc.o [1]
+rtctime                 0x20000ec0    0x4  Data  Lc  at.o [1]
+runEngineUpdate         0x08000b4d    0x8  Code  Lc  lmic.o [1]
+runReset                0x08000b63   0x12  Code  Lc  lmic.o [1]
+rxbuf                   0x20000ab8   0xc8  Data  Lc  oslmic.o [1]
+rxfsk                   0x08003557    0x2  Code  Lc  lmicradio.o [1]
+rxlen                   0x20000ee0    0x1  Data  Lc  oslmic.o [1]
+rxlora                  0x08003489   0xce  Code  Lc  lmicradio.o [1]
+rxschedInit             0x08000605   0x94  Code  Lc  lmic.o [1]
+rxschedNext             0x08000699   0x5a  Code  Lc  lmic.o [1]
+schedRx2                0x08001245   0x2e  Code  Lc  lmic.o [1]
+setBcnRxParams          0x08000a8d    0x2  Code  Lc  lmic.o [1]
+setCr                   0x080000cf    0xe  Code  Gb  lmic.o [1]
+setDrJoin               0x08000785    0x6  Code  Lc  lmic.o [1]
+setDrTxpow              0x0800078b   0x30  Code  Lc  lmic.o [1]
+setNocrc                0x080000e9    0xc  Code  Gb  lmic.o [1]
+setupRx1                0x08001285   0x52  Code  Lc  lmic.o [1]
+setupRx1DnData          0x08001655    0xa  Code  Lc  lmic.o [1]
+setupRx1Jacc            0x08001599    0xa  Code  Lc  lmic.o [1]
+setupRx2                0x0800120d   0x2a  Code  Lc  lmic.o [1]
+setupRx2DnData          0x080015fb    0xe  Code  Lc  lmic.o [1]
+setupRx2Jacc            0x0800156b    0xe  Code  Lc  lmic.o [1]
+sleep_ticks             0x20000ed0    0x4  Data  Lc  osal.o [1]
+snprintf                0x08009079   0x48  Code  Gb  snprintf.o [3]
+startJoining            0x08001b21    0xa  Code  Lc  lmic.o [1]
+startRxBcn              0x08001ef9   0x10  Code  Lc  lmic.o [1]
+startRxPing             0x08001f0d   0x10  Code  Lc  lmic.o [1]
+startScan               0x08001a49   0x66  Code  Lc  lmic.o [1]
+startrx                 0x08003559   0x24  Code  Lc  lmicradio.o [1]
+starttx                 0x0800346f   0x1a  Code  Lc  lmicradio.o [1]
+stateJustJoined         0x08000b75   0x88  Code  Lc  lmic.o [1]
+str2hex                 0x08007f43   0x56  Code  Lc  at.o [1]
+strSX127x               0x20000d8c   0x30  Data  Gb  Drv_sx127x.o [1]
+strSX127xIOCtl_IRQ      0x0800b538    0x8  Data  Gb  Drv_SX127x_IOCTL.o [1]
+strSX127xIOCtl_Pin      0x20000eb0    0x8  Data  Gb  Drv_SX127x_IOCTL.o [1]
+strUsartData            0x20000e44   0x10  Data  Gb  Drv_Usart.o [1]
+strlen                  0x08007dbf   0x10  Code  Gb  strlen.o [5]
+strncmp                 0x080092b9   0x2c  Code  Gb  strncmp.o [3]
+task                    0x20000e80    0xc  Data  Lc  lmic_task.o [1]
+task                    0x20000e98    0xc  Data  Lc  radiocheck_task.o [1]
+task                    0x20000ea4    0xc  Data  Lc  uart_task.o [1]
+task_count              0x20000ede    0x1  Data  Lc  osal.o [1]
+task_done               0x2000005c    0x1  Data  Lc  lmic_task.o [1]
+task_done               0x2000005d    0x1  Data  Lc  radiocheck_task.o [1]
+task_list               0x20000dbc   0x28  Data  Lc  osal.o [1]
+taskdelay               0x0800ab05    0xe  Code  Lc  uart_task.o [1]
+ticks                   0x20000ecc    0x4  Data  Lc  osal.o [1]
+timer_count             0x20000edf    0x1  Data  Lc  osal.o [1]
+timer_list              0x20000de4   0x28  Data  Lc  osal.o [1]
+timer_txrxtimeout       0x20000e54   0x10  Data  Lc  lmiclowlevelapi.o [1]
+txDelay                 0x0800074d   0x38  Code  Lc  lmic.o [1]
+txDone                  0x080012e9   0x48  Code  Lc  lmic.o [1]
+txfsk                   0x080033a7    0x2  Code  Lc  lmicradio.o [1]
+txlen                   0x20000ee1    0x1  Data  Lc  oslmic.o [1]
+txlora                  0x080033a9   0xc6  Code  Lc  lmicradio.o [1]
+txmode                  0x20000ee2    0x1  Data  Lc  oslmic.o [1]
+txport                  0x20000ee3    0x1  Data  Lc  oslmic.o [1]
+txrxstate               0x20000edd    0x1  Data  Lc  lmicradio.o [1]
+uart_task               0x0800ab13   0x50  Code  Lc  uart_task.o [1]
+uart_task::len_prev     0x20000ed4    0x4  Data  Lc  uart_task.o [1]
+uart_task_id            0x20000ee4    0x1  Data  Lc  uart_task.o [1]
+unlinkjob               0x08002e3f   0x1e  Code  Lc  oslmic.o [1]
+updataDone              0x08001669   0x22  Code  Lc  lmic.o [1]
+updateTx                0x080009a5   0x5e  Code  Lc  lmic.o [1]
+updr2rps                0x080000fd    0xc  Code  Gb  lmic.o [1]
+usart_buf               0x200009b8  0x100  Data  Gb  Main.o [1]
+validDR                 0x0800012d   0x18  Code  Gb  lmic.o [1]
+
+
+[1] = C:\Users\solar\Desktop\项目代码\Worker32\Proj\Module_stm32\Debug\Obj
+[2] = command line
+[3] = dl6M_tln.a
+[4] = m6M_tl.a
+[5] = rt6M_tl.a
+[6] = shb_l.a
+
+  40 588 bytes of readonly  code memory
+   5 829 bytes of readonly  data memory
+   3 811 bytes of readwrite data memory
+
+Errors: none
+Warnings: none

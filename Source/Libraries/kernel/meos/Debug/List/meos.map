@@ -1,0 +1,209 @@
+###############################################################################
+#
+# IAR ELF Linker V7.80.4.12462/W32 for ARM                17/Oct/2018  18:23:28
+# Copyright 2007-2017 IAR Systems AB.
+#
+#    Output file  =  
+#        G:\LoRaSDRTx\Source\Libraries\kernel\meos\Debug\Exe\meos.out
+#    Map file     =  
+#        G:\LoRaSDRTx\Source\Libraries\kernel\meos\Debug\List\meos.map
+#    Command line =  
+#        G:\LoRaSDRTx\Source\Libraries\kernel\meos\Debug\Obj\main.o
+#        G:\LoRaSDRTx\Source\Libraries\kernel\meos\Debug\Obj\os.o
+#        G:\LoRaSDRTx\Source\Libraries\kernel\meos\Debug\Obj\os_shed.o -o
+#        G:\LoRaSDRTx\Source\Libraries\kernel\meos\Debug\Exe\meos.out --map
+#        G:\LoRaSDRTx\Source\Libraries\kernel\meos\Debug\List\meos.map --config
+#        "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        7.5\arm\CONFIG\generic_cortex.icf" --semihosting --entry
+#        __iar_program_start --vfe
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__SystemLibrary = DLib
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A0":  place at 0x00000000 { ro section .intvec };
+"P1":  place in [from 0x00000000 to 0x0007ffff] { ro };
+"P3":  place in [from 0x00000000 to 0x00000000] |
+                [from 0x20000000 to 0x2000ffff] {
+          rw, block CSTACK, block PROC_STACK, block HEAP };
+
+  Section          Kind        Address   Size  Object
+  -------          ----        -------   ----  ------
+"A0":                                    0x40
+  .intvec          ro code  0x00000000   0x40  vector_table_M.o [4]
+                          - 0x00000040   0x40
+
+"P1":                                   0x2d8
+  .text            ro code  0x00000040   0xe0  os_shed.o [1]
+  CODE             ro code  0x00000120   0x98  os.o [1]
+  .text            ro code  0x000001b8   0x98  main.o [1]
+  .text            ro code  0x00000250   0x40  zero_init3.o [4]
+  .text            ro code  0x00000290   0x28  data_init.o [4]
+  .iar.init_table  const    0x000002b8   0x10  - Linker created -
+  .text            ro code  0x000002c8   0x1a  cmain.o [4]
+  .text            ro code  0x000002e2    0x4  low_level_init.o [3]
+  .text            ro code  0x000002e6    0x4  exit.o [3]
+  .text            ro code  0x000002ea    0x2  vector_table_M.o [4]
+  .text            ro code  0x000002ec    0xa  cexit.o [4]
+  .text            ro code  0x000002f8   0x14  exit.o [5]
+  .text            ro code  0x0000030c    0xc  cstartup_M.o [4]
+  .rodata          const    0x00000318    0x0  zero_init3.o [4]
+                          - 0x00000318  0x2d8
+
+"P3", part 1 of 2:                      0x17c
+  .bss             zero     0x20000000   0x50  main.o [1]
+  .bss             zero     0x20000050   0x50  main.o [1]
+  .bss             zero     0x200000a0   0x50  main.o [1]
+  .bss             zero     0x200000f0   0x28  os_shed.o [1]
+  .bss             zero     0x20000118   0x18  main.o [1]
+  .bss             zero     0x20000130   0x18  main.o [1]
+  .bss             zero     0x20000148   0x18  main.o [1]
+  .bss             zero     0x20000160    0x4  main.o [1]
+  .bss             zero     0x20000164    0x4  main.o [1]
+  .bss             zero     0x20000168    0x4  os_shed.o [1]
+  .bss             zero     0x2000016c    0x4  os_shed.o [1]
+  .bss             zero     0x20000170    0x4  os_shed.o [1]
+  .bss             zero     0x20000174    0x4  os_shed.o [1]
+  .bss             zero     0x20000178    0x4  os_shed.o [1]
+                          - 0x2000017c  0x17c
+
+"P3", part 2 of 2:                      0x400
+  CSTACK                    0x20000180  0x400  <Block>
+    CSTACK         uninit   0x20000180  0x400  <Block tail>
+                          - 0x20000580  0x400
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address     Size
+          -------     ----
+Zero (__iar_zero_init3)
+    1 destination range, total size 0x17c:
+          0x20000000  0x17c
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module            ro code  ro data  rw data
+    ------            -------  -------  -------
+G:\LoRaSDRTx\Source\Libraries\kernel\meos\Debug\Obj: [1]
+    main.o                152               320
+    os.o                  152
+    os_shed.o             224                60
+    -------------------------------------------
+    Total:                528               380
+
+command line: [2]
+    -------------------------------------------
+    Total:
+
+dl7M_tln.a: [3]
+    exit.o                  4
+    low_level_init.o        4
+    -------------------------------------------
+    Total:                  8
+
+rt7M_tl.a: [4]
+    cexit.o                10
+    cmain.o                26
+    cstartup_M.o           12
+    data_init.o            40
+    vector_table_M.o       66
+    zero_init3.o           64
+    -------------------------------------------
+    Total:                218
+
+shb_l.a: [5]
+    exit.o                 20
+    -------------------------------------------
+    Total:                 20
+
+    Gaps                    2
+    Linker created                  16    1 024
+-----------------------------------------------
+    Grand Total:          776       16    1 404
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                      Address  Size  Type      Object
+-----                      -------  ----  ----      ------
+.iar.init_table$$Base   0x000002b8         --   Gb  - Linker created -
+.iar.init_table$$Limit  0x000002c8         --   Gb  - Linker created -
+?main                   0x000002c9        Code  Gb  cmain.o [4]
+CSTACK$$Base            0x20000180         --   Gb  - Linker created -
+CSTACK$$Limit           0x20000580         --   Gb  - Linker created -
+IsReady                 0x00000041  0x1e  Code  Gb  os_shed.o [1]
+OSCtxSw                 0x0000014d        Code  Gb  os.o [1]
+OSGetHighRdy            0x0000005f  0x4c  Code  Gb  os_shed.o [1]
+OSIntCtxSw              0x00000155        Code  Gb  os.o [1]
+OSStartHighRdy          0x0000012f        Code  Gb  os.o [1]
+OS_CPU_ExceptStkBase    0x20000174   0x4  Data  Gb  os_shed.o [1]
+OS_CPU_PendSVHandler    0x0000015d        Code  Gb  os.o [1]
+Region$$Table$$Base     0x000002b8         --   Gb  - Linker created -
+Region$$Table$$Limit    0x000002c8         --   Gb  - Linker created -
+Shed                    0x000000ab   0x8  Code  Gb  os_shed.o [1]
+Start                   0x000000b3   0x8  Code  Gb  os_shed.o [1]
+__cmain                 0x000002c9        Code  Gb  cmain.o [4]
+__exit                  0x000002f9  0x14  Code  Gb  exit.o [5]
+__iar_data_init3        0x00000291  0x28  Code  Gb  data_init.o [4]
+__iar_program_start     0x0000030d        Code  Gb  cstartup_M.o [4]
+__iar_zero_init3        0x00000251  0x40  Code  Gb  zero_init3.o [4]
+__low_level_init        0x000002e3   0x4  Code  Gb  low_level_init.o [3]
+__vector_table          0x00000000        Data  Gb  vector_table_M.o [4]
+_call_main              0x000002d5        Code  Gb  cmain.o [4]
+_exit                   0x000002ed        Code  Gb  cexit.o [4]
+_main                   0x000002df        Code  Gb  cmain.o [4]
+cnt1                    0x20000160   0x4  Data  Lc  main.o [1]
+cnt2                    0x20000164   0x4  Data  Lc  main.o [1]
+exit                    0x000002e7   0x4  Code  Gb  exit.o [3]
+idle                    0x000001b9   0xc  Code  Gb  main.o [1]
+main                    0x000001ed  0x38  Code  Gb  main.o [1]
+os_createtsk            0x000000e1  0x22  Code  Gb  os_shed.o [1]
+os_delay                0x000000bb  0x14  Code  Gb  os_shed.o [1]
+os_run                  0x00000119   0x8  Code  Gb  os_shed.o [1]
+os_tick                 0x000000cf  0x12  Code  Gb  os_shed.o [1]
+osticks                 0x20000178   0x4  Data  Lc  os_shed.o [1]
+stk1                    0x20000000  0x50  Data  Lc  main.o [1]
+stk2                    0x20000050  0x50  Data  Lc  main.o [1]
+stk3                    0x200000a0  0x50  Data  Lc  main.o [1]
+task1                   0x000001c5  0x14  Code  Gb  main.o [1]
+task2                   0x000001d9  0x14  Code  Gb  main.o [1]
+tcb1                    0x20000118  0x18  Data  Lc  main.o [1]
+tcb2                    0x20000130  0x18  Data  Lc  main.o [1]
+tcb3                    0x20000148  0x18  Data  Lc  main.o [1]
+tcbcur                  0x2000016c   0x4  Data  Gb  os_shed.o [1]
+tcbhigh                 0x20000170   0x4  Data  Gb  os_shed.o [1]
+tcblist                 0x200000f0  0x28  Data  Lc  os_shed.o [1]
+tcbnum                  0x20000168   0x4  Data  Gb  os_shed.o [1]
+
+
+[1] = G:\LoRaSDRTx\Source\Libraries\kernel\meos\Debug\Obj
+[2] = command line
+[3] = dl7M_tln.a
+[4] = rt7M_tl.a
+[5] = shb_l.a
+
+    776 bytes of readonly  code memory
+     16 bytes of readonly  data memory
+  1 404 bytes of readwrite data memory
+
+Errors: none
+Warnings: none

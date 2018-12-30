@@ -1,0 +1,273 @@
+[Stack]
+FillEnabled=0
+OverflowWarningsEnabled=1
+WarningThreshold=90
+SpWarningsEnabled=1
+WarnLogOnly=1
+UseTrigger=1
+TriggerName=main
+LimitSize=0
+ByteLimit=50
+[stlink]
+stlinkserialNo=ECEBDCEF
+stlinkfoundProbes=
+[DebugChecksum]
+Checksum=-530760820
+[Exceptions]
+StopOnUncaught=_ 0
+StopOnThrow=_ 0
+[CodeCoverage]
+Enabled=_ 0
+[CallStack]
+ShowArgs=0
+[Disassembly]
+MixedMode=1
+[SWOTraceHWSettings]
+OverrideDefaultClocks=0
+CpuClock=72000000
+ClockAutoDetect=0
+ClockWanted=2000000
+JtagSpeed=2000000
+Prescaler=36
+TimeStampPrescIndex=0
+TimeStampPrescData=0
+PcSampCYCTAP=1
+PcSampPOSTCNT=15
+PcSampIndex=0
+DataLogMode=0
+ITMportsEnable=0
+ITMportsTermIO=0
+ITMportsLogFile=0
+ITMlogFile=$PROJ_DIR$\ITM.log
+[JLinkDriver]
+WatchCond=_ 0
+Watch0=_ 0 "" 0 "" 0 "" 0 "" 0 0 0 0
+Watch1=_ 0 "" 0 "" 0 "" 0 "" 0 0 0 0
+CStepIntDis=_ 0
+TraceBufferSize=0x00000000
+TraceStallIfFIFOFull=0x00000000
+TracePortSize=0x00000000
+LeaveTargetRunning=_ 0
+ETM_Cookie=ID100_107000000000000000001
+ETM_Reg_GeneralControl=0x00022C08
+ETM_Reg_TriggerEvent=0x0000406F
+ETM_Reg_MemoryMapDecodeControl=0x00000000
+ETM_Reg_TraceStartStopControl=0x00000000
+ETM_Reg_TraceEnableControl2=0x00000000
+ETM_Reg_TraceEnableEvent=0x0000006F
+ETM_Reg_TraceEnableControl1=0x01000000
+ETM_Reg_FIFOFullRegion=0x01000000
+ETM_Reg_FIFOFullLevel=0x00000008
+ETM_Reg_ViewDataEvent=0x0000406F
+ETM_Reg_ViewDataControl1=0x00000000
+ETM_Reg_ViewDataControl2=0x00000000
+ETM_Reg_ViewDataControl3=0x00000000
+ETM_Reg_AddressComparator1=0x00000000
+ETM_Reg_AddressComparator2=0x00000000
+ETM_Reg_AddressComparator3=0x00000000
+ETM_Reg_AddressComparator4=0x00000000
+ETM_Reg_AddressComparator5=0x00000000
+ETM_Reg_AddressComparator6=0x00000000
+ETM_Reg_AddressComparator7=0x00000000
+ETM_Reg_AddressComparator8=0x00000000
+ETM_Reg_AddressComparator9=0x00000000
+ETM_Reg_AddressComparator10=0x00000000
+ETM_Reg_AddressComparator11=0x00000000
+ETM_Reg_AddressComparator12=0x00000000
+ETM_Reg_AddressComparator13=0x00000000
+ETM_Reg_AddressComparator14=0x00000000
+ETM_Reg_AddressComparator15=0x00000000
+ETM_Reg_AddressComparator16=0x00000000
+ETM_Reg_AddressAccessType1=0x00000001
+ETM_Reg_AddressAccessType2=0x00000001
+ETM_Reg_AddressAccessType3=0x00000001
+ETM_Reg_AddressAccessType4=0x00000001
+ETM_Reg_AddressAccessType5=0x00000001
+ETM_Reg_AddressAccessType6=0x00000001
+ETM_Reg_AddressAccessType7=0x00000001
+ETM_Reg_AddressAccessType8=0x00000001
+ETM_Reg_AddressAccessType9=0x00000001
+ETM_Reg_AddressAccessType10=0x00000001
+ETM_Reg_AddressAccessType11=0x00000001
+ETM_Reg_AddressAccessType12=0x00000001
+ETM_Reg_AddressAccessType13=0x00000001
+ETM_Reg_AddressAccessType14=0x00000001
+ETM_Reg_AddressAccessType15=0x00000001
+ETM_Reg_AddressAccessType16=0x00000001
+ETM_Reg_DataComparatorValue1=0x00000000
+ETM_Reg_DataComparatorValue2=0x00000000
+ETM_Reg_DataComparatorValue3=0x00000000
+ETM_Reg_DataComparatorValue4=0x00000000
+ETM_Reg_DataComparatorValue5=0x00000000
+ETM_Reg_DataComparatorValue6=0x00000000
+ETM_Reg_DataComparatorValue7=0x00000000
+ETM_Reg_DataComparatorValue8=0x00000000
+ETM_Reg_DataComparatorValue9=0x00000000
+ETM_Reg_DataComparatorValue10=0x00000000
+ETM_Reg_DataComparatorValue11=0x00000000
+ETM_Reg_DataComparatorValue12=0x00000000
+ETM_Reg_DataComparatorValue13=0x00000000
+ETM_Reg_DataComparatorValue14=0x00000000
+ETM_Reg_DataComparatorValue15=0x00000000
+ETM_Reg_DataComparatorValue16=0x00000000
+ETM_Reg_DataComparatorMask1=0x00000000
+ETM_Reg_DataComparatorMask2=0x00000000
+ETM_Reg_DataComparatorMask3=0x00000000
+ETM_Reg_DataComparatorMask4=0x00000000
+ETM_Reg_DataComparatorMask5=0x00000000
+ETM_Reg_DataComparatorMask6=0x00000000
+ETM_Reg_DataComparatorMask7=0x00000000
+ETM_Reg_DataComparatorMask8=0x00000000
+ETM_Reg_DataComparatorMask9=0x00000000
+ETM_Reg_DataComparatorMask10=0x00000000
+ETM_Reg_DataComparatorMask11=0x00000000
+ETM_Reg_DataComparatorMask12=0x00000000
+ETM_Reg_DataComparatorMask13=0x00000000
+ETM_Reg_DataComparatorMask14=0x00000000
+ETM_Reg_DataComparatorMask15=0x00000000
+ETM_Reg_DataComparatorMask16=0x00000000
+ETM_Reg_InitialCounterValue1=0x00000000
+ETM_Reg_InitialCounterValue2=0x00000000
+ETM_Reg_InitialCounterValue3=0x00000000
+ETM_Reg_InitialCounterValue4=0x00000000
+ETM_Reg_CounterEnable1=0x0002406F
+ETM_Reg_CounterEnable2=0x0002406F
+ETM_Reg_CounterEnable3=0x0002406F
+ETM_Reg_CounterEnable4=0x0002406F
+ETM_Reg_CounterReload1=0x0000406F
+ETM_Reg_CounterReload2=0x0000406F
+ETM_Reg_CounterReload3=0x0000406F
+ETM_Reg_CounterReload4=0x0000406F
+ETM_Reg_SequencerStateTransition1=0x00000000
+ETM_Reg_SequencerStateTransition2=0x00000000
+ETM_Reg_SequencerStateTransition3=0x00000000
+ETM_Reg_SequencerStateTransition4=0x00000000
+ETM_Reg_SequencerStateTransition5=0x00000000
+ETM_Reg_SequencerStateTransition6=0x00000000
+ETM_Reg_ExternalOutputs1=0x00000000
+ETM_Reg_ExternalOutputs2=0x00000000
+ETM_Reg_ExternalOutputs3=0x00000000
+ETM_Reg_ExternalOutputs4=0x00000000
+ETM_Reg_ContextIDValue1=0x00000000
+ETM_Reg_ContextIDValue2=0x00000000
+ETM_Reg_ContextIDValue3=0x00000000
+ETM_Reg_ContextIDMask=0x00000000
+ETM_Reg_SynchronizationFrequency=0x00000400
+TraceShowTime=0
+TraceShowTimeFreq=1000000
+[Interrupts]
+Enabled=1
+[MemConfig]
+Base=1
+Manual=0
+Ddf=1
+TypeViol=0
+Stop=1
+[Simulator]
+Freq=10000000
+MultiCoreRunAll=1
+[struct_types]
+Fmt0=flash_param_t-active	4	0
+[array_types]
+Fmt0=u1_t[64]	4	0
+Fmt1=uint8[100]	4	0
+Fmt2=uint8[101]	4	0
+Fmt3=uint8[128]	4	0
+Fmt4=uint8_t[16]	4	0
+Fmt5=uint8_t[8]	4	0
+[watch_formats]
+Fmt0={W}0:LMIC.opmode	4	0
+Fmt1={W}1:LMIC.opmode	4	0
+Fmt2={W}1:tmpreg	4	0
+Fmt3={W}1:wtd_period	3	0
+[Trace2]
+Enabled=0
+ShowSource=0
+[SWOTraceWindow]
+PcSampling=0
+InterruptLogs=0
+ForcedTimeStamps=0
+EventCPI=0
+EventEXC=0
+EventFOLD=0
+EventLSU=0
+EventSLEEP=0
+[PowerLog]
+LogEnabled=0
+GraphEnabled=0
+ShowTimeLog=1
+ShowTimeSum=0
+Title_0=I0
+Symbol_0=0 4 0
+LiveEnabled=0
+LiveFile=PowerLogLive.log
+[DataLog]
+LogEnabled=0
+SumEnabled=0
+GraphEnabled=0
+ShowTimeLog=1
+ShowTimeSum=1
+[EventLog]
+LogEnabled=0
+SumEnabled=0
+GraphEnabled=0
+ShowTimeLog=1
+ShowTimeSum=1
+Title_0=Ch3
+Symbol_0=0 4 1
+Title_1=Ch2
+Symbol_1=0 4 1
+Title_2=Ch1
+Symbol_2=0 4 1
+Title_3=Ch0
+Symbol_3=0 4 1
+SumSortOrder=0
+[InterruptLog]
+LogEnabled=0
+SumEnabled=0
+GraphEnabled=0
+ShowTimeLog=1
+ShowTimeSum=1
+SumSortOrder=0
+[PowerProbe]
+Frequency=10000
+Probe0=I0
+ProbeSetup0=2 1 1 2 0 0
+[Trace1]
+Enabled=0
+ShowSource=1
+[Log file]
+LoggingEnabled=_ 0
+LogFile=_ ""
+Category=_ 0
+[TermIOLog]
+LoggingEnabled=_ 0
+LogFile=_ ""
+[DriverProfiling]
+Enabled=0
+Mode=1
+Graph=0
+Symbiont=0
+Exclusions=
+[CallStackLog]
+Enabled=0
+[CallStackStripe]
+ShowTiming=1
+[Disassemble mode]
+mode=0
+[Breakpoints2]
+Bp0=_ 0 "EMUL_CODE" "{$PROJ_DIR$\..\Source\User\at.c}.542.5" 0 0 1 "" 0 "" 0
+Bp1=_ 0 "EMUL_CODE" "{$PROJ_DIR$\..\Source\Bsp_SX127x\Drv_sx127x.c}.1364.9" 0 0 1 "" 0 "" 0
+Bp2=_ 0 "EMUL_CODE" "{$PROJ_DIR$\..\Source\User\at.c}.723.9" 0 0 1 "" 0 "" 0
+Bp3=_ 0 "EMUL_CODE" "{}.688.9" 0 0 1 "" 0 "" 0
+Bp4=_ 0 "EMUL_CODE" "{}.693.9" 0 0 1 "" 0 "" 0
+Bp5=_ 0 "EMUL_CODE" "{$PROJ_DIR$\..\Source\Libraries\lmic\lmicradio.c}.283.5" 0 0 1 "" 0 "" 0
+Bp6=_ 0 "EMUL_CODE" "{$PROJ_DIR$\..\Source\User\stm32f0xx_it.c}.234.2" 0 0 1 "" 0 "" 0
+Bp7=_ 0 "EMUL_CODE" "{$PROJ_DIR$\..\Source\Libraries\lmic\oslmic.c}.281.9" 0 0 1 "" 0 "" 0
+Bp8=_ 0 "EMUL_CODE" "{}.596.9" 0 0 1 "" 0 "" 0
+Bp9=_ 0 "EMUL_CODE" "{}.1040.5" 0 0 1 "" 0 "" 0
+Count=10
+[Aliases]
+A0=_ "C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.0\arm\inc\c\DLib_Product_string.h" ""
+Count=1
+SuppressDialog=0

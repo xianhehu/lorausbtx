@@ -1,0 +1,17 @@
+//--------- STM32F030Cx------------------
+$PROJ_DIR$\..\Source\User
+$PROJ_DIR$\..\Source\Drives
+$PROJ_DIR$\..\Source\Libraries\CMSIS\Device\ST\STM32F0xx\Include
+$PROJ_DIR$\..\Source\Libraries\STM32F0xx_StdPeriph_Driver\inc
+$PROJ_DIR$\..\Source\Bsp_sx127x
+$PROJ_DIR$\..\Source\Q_Shell
+
+//-------------------------------------
+STM32F030
+_MCU_STM32_
+USE_STDPERIPH_DRIVER
+HSE_32M
+
+
+//-------------------------------------
+$PROJ_DIR$\Proj_stm32f030x8.icf

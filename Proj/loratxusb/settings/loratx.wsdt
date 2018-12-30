@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<Workspace>
+  <ConfigDictionary>
+    
+  <CurrentConfigs><Project>loratx/Debug</Project></CurrentConfigs></ConfigDictionary>
+  <Desktop>
+    <Static>
+      <Workspace>
+        <ColumnWidths>
+          
+          
+          
+          
+        <Column0>320</Column0><Column1>27</Column1><Column2>27</Column2><Column3>27</Column3></ColumnWidths>
+      </Workspace>
+      <Debug-Log>
+        
+        
+      <ColumnWidth0>20</ColumnWidth0><ColumnWidth1>1861</ColumnWidth1></Debug-Log>
+      <Build>
+        
+        
+        
+        
+      <ColumnWidth0>20</ColumnWidth0><ColumnWidth1>1395</ColumnWidth1><ColumnWidth2>372</ColumnWidth2><ColumnWidth3>93</ColumnWidth3></Build>
+      <Find-in-Files>
+        
+        
+        
+        
+      <ColumnWidth0>420</ColumnWidth0><ColumnWidth1>70</ColumnWidth1><ColumnWidth2>630</ColumnWidth2><ColumnWidth3>280</ColumnWidth3></Find-in-Files>
+      <TerminalIO/>
+      <Select-Ambiguous-Definitions>
+        <ColumnWidth0>490</ColumnWidth0>
+        <ColumnWidth1>70</ColumnWidth1>
+        <ColumnWidth2>841</ColumnWidth2>
+      </Select-Ambiguous-Definitions>
+      <Find-All-References>
+        
+        
+        
+      <ColumnWidth0>664</ColumnWidth0><ColumnWidth1>94</ColumnWidth1><ColumnWidth2>1138</ColumnWidth2></Find-All-References>
+    <Find-All-Declarations><ColumnWidth0>664</ColumnWidth0><ColumnWidth1>94</ColumnWidth1><ColumnWidth2>1138</ColumnWidth2></Find-All-Declarations></Static>
+    <Windows>
+      
+      
+    <Wnd0>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-24603-30283</Identity>
+            <TabName>Workspace</TabName>
+            <Factory>Workspace</Factory>
+            <Session>
+              
+            <NodeDict><ExpandedNode>loratx</ExpandedNode><ExpandedNode>loratx/app</ExpandedNode><ExpandedNode>loratx/app/src</ExpandedNode><ExpandedNode>loratx/app/src/usb</ExpandedNode><ExpandedNode>loratx/lib</ExpandedNode><ExpandedNode>loratx/lib/radio</ExpandedNode><ExpandedNode>loratx/os</ExpandedNode><ExpandedNode>loratx/os/meos</ExpandedNode></NodeDict></Session>
+          </Tab>
+        </Tabs>
+        
+      <SelectedTab>0</SelectedTab></Wnd0><Wnd1>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-1830-30505</Identity>
+            <TabName>Debug Log</TabName>
+            <Factory>Debug-Log</Factory>
+            <Session/>
+          </Tab>
+          <Tab>
+            <Identity>TabID-3064-31710</Identity>
+            <TabName>Build</TabName>
+            <Factory>Build</Factory>
+            <Session/>
+          </Tab>
+          <Tab>
+            <Identity>TabID-26925-2384</Identity>
+            <TabName>Find in Files</TabName>
+            <Factory>Find-in-Files</Factory>
+            <Session/>
+          </Tab>
+          <Tab>
+            <Identity>TabID-21242-835</Identity>
+            <TabName>Ambiguous Definitions</TabName>
+            <Factory>Select-Ambiguous-Definitions</Factory>
+            <Session/>
+          </Tab>
+          <Tab>
+            <Identity>TabID-7306-17483</Identity>
+            <TabName>References</TabName>
+            <Factory>Find-All-References</Factory>
+            <Session/>
+          </Tab>
+        <Tab><Identity>TabID-1912-13267</Identity><TabName>Declarations</TabName><Factory>Find-All-Declarations</Factory><Session/></Tab></Tabs>
+        
+      <SelectedTab>1</SelectedTab></Wnd1></Windows>
+    <Editor>
+      
+      
+      
+      
+    <Pane><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\src\at.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>47</YPos2><SelStart2>1368</SelStart2><SelEnd2>1368</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>E:\G&#x76D8;\LoRaSDRTx\Proj\loratxusb\src\main.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>107</YPos2><SelStart2>4839</SelStart2><SelEnd2>4839</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>E:\G&#x76D8;\LoRaSDRTx\Proj\loratxusb\src\stm32_it.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>74</YPos2><SelStart2>4169</SelStart2><SelEnd2>4169</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>E:\G&#x76D8;\LoRaSDRTx\Proj\loratxusb\src\app.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>4</YPos2><SelStart2>1550</SelStart2><SelEnd2>1550</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>E:\G&#x76D8;\LoRaSDRTx\Proj\loratxusb\src\usb\usb_endp.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>45</YPos2><SelStart2>2913</SelStart2><SelEnd2>2913</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>E:\G&#x76D8;\LoRaSDRTx\Proj\loratxusb\src\virtualComPort.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>315</YPos2><SelStart2>12751</SelStart2><SelEnd2>12765</SelEnd2></Tab><ActiveTab>5</ActiveTab></Pane><ActivePane>0</ActivePane><Sizes><Pane><X>1000000</X><Y>1000000</Y></Pane></Sizes><SplitMode>1</SplitMode></Editor>
+    <Positions>
+      
+      
+      
+      
+      
+    <Top><Row0><Sizes><Toolbar-04D86528><key>iaridepm.enu1</key></Toolbar-04D86528></Sizes></Row0><Row1><Sizes/></Row1></Top><Left><Row0><Sizes><Wnd0><Rect><Top>-2</Top><Left>-2</Left><Bottom>676</Bottom><Right>394</Right><x>-2</x><y>-2</y><xscreen>365</xscreen><yscreen>278</yscreen><sizeHorzCX>190104</sizeHorzCX><sizeHorzCY>278837</sizeHorzCY><sizeVertCX>206250</sizeVertCX><sizeVertCY>680040</sizeVertCY></Rect></Wnd0></Sizes></Row0></Left><Right><Row0><Sizes/></Row0></Right><Bottom><Row0><Sizes><Wnd1><Rect><Top>-2</Top><Left>-2</Left><Bottom>276</Bottom><Right>1922</Right><x>-2</x><y>-2</y><xscreen>1924</xscreen><yscreen>278</yscreen><sizeHorzCX>1002083</sizeHorzCX><sizeHorzCY>278837</sizeHorzCY><sizeVertCX>190104</sizeVertCX><sizeVertCY>278837</sizeVertCY></Rect></Wnd1></Sizes></Row0></Bottom><Float><Sizes/></Float></Positions>
+  </Desktop>
+</Workspace>
+
+
